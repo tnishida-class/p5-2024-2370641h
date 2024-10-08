@@ -1,0 +1,544 @@
+{
+  "data": [
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:16:39 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「繰り返し」\r\nfunction setup() {\r\n  createCanvas(100,100);\r\n  background(225);\r\n  ellipse(widrh/2,height/2,10);\r\n    nofill();\r\n  fill(0);\r\n  let x = 0;\r\n  while(x < 100){ // 四角を描く座標が描画範囲内であれば続ける\r\n    rect(x, x, 20, 20);\r\n    x = x + 20; // 繰り返し1回ごとに場所を動かす\r\n  }\r\n}\r\n\r\n// for 文を使うと、同じプログラムを以下のように書くことができます\r\n// function setup() {\r\n//   createCanvas(100,100);\r\n//   fill(0);\r\n//   for(let i = 0; i < 5; i++){\r\n//     rect(i * 20, i * 20, 20, 20);\r\n//   }\r\n// }\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:20:18 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「繰り返し」\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(225);\r\n  ellipse(widrh/2,height/2,10);\r\n  nofill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    ellipse(width/2,height/2,d,d);\r\n  }}\r\n\r\n \r\n// for 文を使うと、同じプログラムを以下のように書くことができます\r\n// function setup() {\r\n//   createCanvas(100,100);\r\n//   fill(0);\r\n//   for(let i = 0; i < 5; i++){\r\n//     rect(i * 20, i * 20, 20, 20);\r\n//   }\r\n// }\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:20:22 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「繰り返し」\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(225);\r\n  ellipse(widrh/2,height/2,10);\r\n  nofill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    ellipse(width/2,height/2,d,d);\r\n  }}\r\n\r\n \r\n// for 文を使うと、同じプログラムを以下のように書くことができます\r\n// function setup() {\r\n//   createCanvas(100,100);\r\n//   fill(0);\r\n//   for(let i = 0; i < 5; i++){\r\n//     rect(i * 20, i * 20, 20, 20);\r\n//   }\r\n// }\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:20:35 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「繰り返し」\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(225);\r\n  ellipse(widrh/2,height/2,10);\r\n  nofill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    ellipse(width/2,height/2,d,d);\r\n  }}\r\n\r\n \r\n// for 文を使うと、同じプログラムを以下のように書くことができます\r\n// function setup() {\r\n//   createCanvas(100,100);\r\n//   fill(0);\r\n//   for(let i = 0; i < 5; i++){\r\n//     rect(i * 20, i * 20, 20, 20);\r\n//   }\r\n// }\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:23:03 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「繰り返し」\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(225);\r\n  ellipse(widrh/2,height/2,10);\r\n  nofill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    if(i<5){\r\n      stroke(0,0,225);\r\n    }else{\r\n      stroke(225,0,0);\r\n    }\r\n    ellipse(width/2,height/2,d,d);\r\n  }}\r\n\r\n \r\n// for 文を使うと、同じプログラムを以下のように書くことができます\r\n// function setup() {\r\n//   createCanvas(100,100);\r\n//   fill(0);\r\n//   for(let i = 0; i < 5; i++){\r\n//     rect(i * 20, i * 20, 20, 20);\r\n//   }\r\n// }\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:23:13 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「繰り返し」\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(225);\r\n  ellipse(widrh/2,height/2,10);\r\n  nofill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    if(i<5){\r\n      stroke(0,0,225);\r\n    }else{\r\n      stroke(225,0,0)\r\n    }\r\n    ellipse(width/2,height/2,d,d);\r\n  }}\r\n\r\n \r\n// for 文を使うと、同じプログラムを以下のように書くことができます\r\n// function setup() {\r\n//   createCanvas(100,100);\r\n//   fill(0);\r\n//   for(let i = 0; i < 5; i++){\r\n//     rect(i * 20, i * 20, 20, 20);\r\n//   }\r\n// }\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:25:36 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(225);\r\n  ellipse(widrh/2,height/2,10);\r\n  nofill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    if(i<5){\r\n      stroke(0,0,225);\r\n    }else{\r\n      stroke(225,0,0)\r\n    }\r\n    ellipse(width/2,height/2,d,d);\r\n  }}\r\n\r\n  \r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:25:49 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(225);\r\n  ellipse(widrh/2,height/2,10);\r\n  nofill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    if(i<5){\r\n      stroke(0,0,225);\r\n    }else{\r\n      stroke(225,0,0)\r\n    }\r\n    ellipse(width/2,height/2,d,d);\r\n  }}\r\n\r\n  \r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:27:27 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(225);\r\n  noFill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    if(i<5){\r\n      stroke(0,0,225);\r\n    }else{\r\n      stroke(225,0,0)\r\n    }\r\n    ellipse(width/2,height/2,d,d);\r\n  }\r\n}\r\n\r\n  \r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:28:25 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(0,0,0,);\r\n  noFill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    if(i<5){\r\n      stroke(0,0,225);\r\n    }else{\r\n      stroke(225,0,0)\r\n    }\r\n    ellipse(width/2,height/2,d,d);\r\n  }\r\n}\r\n\r\n  \r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:29:19 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(255);\r\n  noFill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    if(i<5){\r\n      stroke(0,0,225);\r\n    }else{\r\n      stroke(225,0,0)\r\n    }\r\n    ellipse(width/2,height/2,d,d);\r\n  }\r\n}\r\n\r\n  \r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:39:02 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(255);\r\n  noFill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    if(i<5){\r\n      stroke(0,0,225);\r\n    }else{\r\n      stroke(225,0,0)\r\n    }\r\n    ellipse(width,height,d,d);\r\n  }\r\n}\r\n\r\n  \r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:39:40 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(255);\r\n  noFill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    if(i<5){\r\n      stroke(0,0,225);\r\n    }else{\r\n      stroke(225,0,0)\r\n    }\r\n    ellipse(width/2,height/2,d,d);\r\n  }\r\n}\r\n\r\n  \r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:39:50 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(255);\r\n  noFill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    if(i<5){\r\n      stroke(0,0,225);\r\n    }else{\r\n      stroke(225,0,0)\r\n    }\r\n    ellipse(width/2,height/2,1,d);\r\n  }\r\n}\r\n\r\n  \r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:39:58 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(255);\r\n  noFill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    if(i<5){\r\n      stroke(0,0,225);\r\n    }else{\r\n      stroke(225,0,0)\r\n    }\r\n    ellipse(width/2,height/2,10,d);\r\n  }\r\n}\r\n\r\n  \r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:40:12 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(255);\r\n  noFill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    if(i<5){\r\n      stroke(0,0,225);\r\n    }else{\r\n      stroke(225,0,0)\r\n    }\r\n    ellipse(width/2,height/2,d,d);\r\n  }\r\n}\r\n\r\n  \r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:40:52 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(255);\r\n  noFill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    if(i<5){\r\n      stroke(0,0,225);\r\n    }else{\r\n      stroke(225,0,0)\r\n    }\r\n    ellipse(width/2,height/2,20,d);\r\n  }\r\n}\r\n\r\n  \r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:41:39 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup() {\r\n  createCanvas(120,120);\r\n  background(255);\r\n  noFill();\r\n  for(let i =0; i<10; i++){\r\n    let d =(i+1)*10;\r\n    if(i<5){\r\n      stroke(0,0,225);\r\n    }else{\r\n      stroke(225,0,0)\r\n    }\r\n    ellipse(width/2,height/2,d,d);\r\n  }\r\n}\r\n\r\n  \r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:54:51 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(400, 400);\r\n  let s = width / 8;\r\n  noStroke();\r\n  for(let i = 0; i < 8; i++){\r\n    for(let j = 0; j < 8; j++){\r\n      let x=i*s;\r\n      let y=j*s;\r\n      rect(x,y,s,s);      // BLANK[1] (hint: rectのx座標は size * i, y座標はsize * j)\r\n    }\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:55:06 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(400, 400);\r\n  let s = width / 8;\r\n  noStroke();\r\n  for(let i = 0; i < 8; i++){\r\n    for(let j = 0; j < 8; j++){\r\n      let x=i*s;\r\n      let y=j*s;\r\n      rect(x,y,s,s);      // BLANK[1] (hint: rectのx座標は size * i, y座標はsize * j)\r\n    }\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 11:56:01 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(400, 400);\r\n  let s = width / 8;\r\n //noStroke();\r\n  for(let i = 0; i < 8; i++){\r\n    for(let j = 0; j < 8; j++){\r\n      let x=i*s;\r\n      let y=j*s;\r\n      rect(x,y,s,s);      // BLANK[1] (hint: rectのx座標は size * i, y座標はsize * j)\r\n    }\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 12:06:04 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(400, 400);\r\n  let s = width / 8;\r\n //noStroke();\r\n  for(let i = 1; i < 8; i++){\r\n    for(let j = 0; j < 8; j++){\r\n      let x=i*s;\r\n      let y=j*s;\r\n      rect(x,y,s,s);      // BLANK[1] (hint: rectのx座標は size * i, y座標はsize * j)\r\n    }\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 12:06:51 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(400, 400);\r\n  let s = width / 8;\r\n //noStroke();\r\n  for(let i = 1; i < 8; i++){\r\n    for(let j = 1; j < 8; j++){\r\n      let x=i*s;\r\n      let y=j*s;\r\n      rect(x,y,s,s);      // BLANK[1] (hint: rectのx座標は size * i, y座標はsize * j)\r\n    }\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 12:07:05 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(400, 400);\r\n  let s = width / 8;\r\n //noStroke();\r\n  for(let i = 0; i < 8; i++){\r\n    for(let j = 0; j < 8; j++){\r\n      let x=i*s;\r\n      let y=j*s;\r\n      rect(x,y,s,s);      // BLANK[1] (hint: rectのx座標は size * i, y座標はsize * j)\r\n    }\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 12:51:02 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(400, 400);\r\n  let s = width / 8;\r\n //noStroke();\r\n  for(let i = 0; i < 8; i++){\r\n    for(let j = 0; j < 8; j++){\r\n      let x=i*s;\r\n      let y=j*s;\r\n      if((i+j)%2===1){\r\n        FileList(122);\r\n      rect(x,y,s,s);  \r\n      }    // BLANK[1] (hint: rectのx座標は size * i, y座標はsize * j)\r\n    }\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 12:51:23 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(400, 400);\r\n  let s = width / 8;\r\n //noStroke();\r\n  for(let i = 0; i < 8; i++){\r\n    for(let j = 0; j < 8; j++){\r\n      let x=i*s;\r\n      let y=j*s;\r\n      if((i+j)%2===1){\r\n        fill(122);\r\n      rect(x,y,s,s);  \r\n      }    // BLANK[1] (hint: rectのx座標は size * i, y座標はsize * j)\r\n    }\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 12:51:38 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(400, 400);\r\n  let s = width / 8;\r\n noStroke();\r\n  for(let i = 0; i < 8; i++){\r\n    for(let j = 0; j < 8; j++){\r\n      let x=i*s;\r\n      let y=j*s;\r\n      if((i+j)%2===1){\r\n        fill(122);\r\n      rect(x,y,s,s);  \r\n      }    // BLANK[1] (hint: rectのx座標は size * i, y座標はsize * j)\r\n    }\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 12:53:03 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(400, 400);\r\n  let s = width / 8;\r\n noStroke();\r\n  for(let i = 0; i < 8; i++){\r\n    for(let j = 0; j < 8; j++){\r\n      let x=i*s;\r\n      let y=j*s;\r\n      if((i+j)%2===1){\r\n        fill(122);\r\n      rect(x,y,s,s);  \r\n      }    // BLANK[1] (hint: rectのx座標は size * i, y座標はsize * j)\r\n    if(((i+j)%2===1)&&)}\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 12:54:02 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(400, 400);\r\n  let s = width / 8;\r\n noStroke();\r\n  for(let i = 0; i < 8; i++){\r\n    for(let j = 0; j < 8; j++){\r\n      let x=i*s;\r\n      let y=j*s;\r\n      if((i+j)%2===1){\r\n        fill(122);\r\n      rect(x,y,s,s);  \r\n      }    // BLANK[1] (hint: rectのx座標は size * i, y座標はsize * j)\r\n    if(((i+j)%2===1)&&(j<3)){\r\n    }\r\n  }\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 12:54:54 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(400, 400);\r\n  let s = width / 8;\r\n noStroke();\r\n  for(let i = 0; i < 8; i++){\r\n    for(let j = 0; j < 8; j++){\r\n      let x=i*s;\r\n      let y=j*s;\r\n      if((i+j)%2===1){\r\n        fill(122);\r\n      rect(x,y,s,s);  \r\n      }    // BLANK[1] (hint: rectのx座標は size * i, y座標はsize * j)\r\n    if(((i+j)%2===1)&&(j<3)){\r\n      fill(255,0,0);\r\n      ellipse(x+s/2,y+s/2,d);\r\n    }\r\n  }\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 12:55:39 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(400, 400);\r\n  let s = width / 8;\r\n noStroke();\r\n  for(let i = 0; i < 8; i++){\r\n    for(let j = 0; j < 8; j++){\r\n      let x=i*s;\r\n      let y=j*s;\r\n      if((i+j)%2===1){\r\n        fill(122);\r\n      rect(x,y,s,s);  \r\n      }    // BLANK[1] (hint: rectのx座標は size * i, y座標はsize * j)\r\n    if(((i+j)%2===1)&&(j<3)){\r\n      fill(255,0,0);\r\n      ellipse(x+s/2,y+s/2,d);\r\n    }\r\n  }\r\n}\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 12:56:28 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(400, 400);\r\n  let s = width / 8;\r\n  let d = height/8;\r\n noStroke();\r\n  for(let i = 0; i < 8; i++){\r\n    for(let j = 0; j < 8; j++){\r\n      let x=i*s;\r\n      let y=j*s;\r\n      if((i+j)%2===1){\r\n        fill(122);\r\n      rect(x,y,s,s);  \r\n      }    // BLANK[1] (hint: rectのx座標は size * i, y座標はsize * j)\r\n    if(((i+j)%2===1)&&(j<3)){\r\n      fill(255,0,0);\r\n      ellipse(x+s/2,y+s/2,d);\r\n    }\r\n  }\r\n}\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 1:00:01 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(400, 400);\r\n  let s = width / 8;\r\n  let d = height/8;\r\n noStroke();\r\n  for(let i = 0; i < 8; i++){\r\n    for(let j = 0; j < 8; j++){\r\n      let x=i*s;\r\n      let y=j*s;\r\n      if((i+j)%2===1){\r\n        fill(122);\r\n      rect(x,y,s,s);  \r\n      }    // BLANK[1] (hint: rectのx座標は size * i, y座標はsize * j)\r\n    if(((i+j)%2===1)&&(j<3)){\r\n      fill(255,0,0);\r\n      ellipse(x+s/2,y+s/2,d,d);\r\n    }\r\n    if(((i+j)%2===1)&&(4<j)){\r\n      fill(0);\r\n      ellipse(x+s/2,y+s/2,d,d);\r\n    }\r\n  }\r\n}\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 4:24:32 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// ダーツ\r\n\r\nfunction setup() {\r\n  const green = color(0, 255, 0);\r\n  const red = color(255, 0, 0);\r\n  const black = color(0);\r\n  const cream = color(242, 212, 147);\r\n  createCanvas(400, 400);\r\n  background(255);\r\n  stroke(255);\r\n  strokeWeight(3);\r\n\r\n  const cx = width / 2; // 中心は (cx, cy)\r\n  const cy = height / 2;\r\n  const maxR = min(width, height); // 大きさは幅と高さのうち小さい方\r\n\r\n  drawCircle(black, maxR);\r\n  drawArcs(green, red, maxR * 0.8);\r\n  // BLANK[1] (hint: drawArcs x 3, drawCircle x 1)\r\n  drawCircle(red, maxR * 0.05);\r\n}\r\n\r\nfunction drawCircle(c, r){\r\n  fill(c);\r\n  ellipse(cx, cy, r, r);\r\n}\r\n\r\nfunction drawArcs(c1, c2, r) {\r\n  for (let i = 0; i < 20; i++) {\r\n    let start = TWO_PI / 20 * i;\r\n    let stop = TWO_PI / 20 * (i + 1);\r\n    fill(i % 2 == 0 ? c1 : c2);\r\n    arc(cx, cy, r, r, start, stop, PIE);\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 4:56:31 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// ダーツ\r\n\r\nfunction setup() {\r\n  const green = color(0, 255, 0);\r\n  const red = color(255, 0, 0);\r\n  const black = color(0);\r\n  const cream = color(242, 212, 147);\r\n  createCanvas(400, 400);\r\n  background(255);\r\n  stroke(255);\r\n  strokeWeight(3);\r\n\r\n  const cx = width / 2; // 中心は (cx, cy)\r\n  const cy = height / 2;\r\n  const maxR = min(width, height); // 大きさは幅と高さのうち小さい方\r\n\r\n  drawCircle(black, maxR);\r\n  drawArcs(green, red, maxR * 0.8);\r\n  // BLANK[1] (hint: drawArcs x 3, drawCircle x 1)\r\n  drawArcs()\r\n  drawArcs()\r\n  drawArcs()\r\n  drawCircle(green,maxR*0.05);\r\n  drawCircle(red, maxR * 0.05);\r\n}\r\n\r\nfunction drawCircle(c, r){\r\n  fill(c);\r\n  ellipse(cx, cy, r, r);\r\n}\r\n\r\nfunction drawArcs(c1, c2, r) {\r\n  for (let i = 0; i < 20; i++) {\r\n    let start = TWO_PI / 20 * i;\r\n    let stop = TWO_PI / 20 * (i + 1);\r\n    fill(i % 2 == 0 ? c1 : c2);\r\n    arc(cx, cy, r, r, start, stop, PIE);\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/8/2024, 4:57:00 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// ダーツ\r\n\r\nfunction setup() {\r\n  const green = color(0, 255, 0);\r\n  const red = color(255, 0, 0);\r\n  const black = color(0);\r\n  const cream = color(242, 212, 147);\r\n  createCanvas(400, 400);\r\n  background(255);\r\n  stroke(255);\r\n  strokeWeight(3);\r\n\r\n  const cx = width / 2; // 中心は (cx, cy)\r\n  const cy = height / 2;\r\n  const maxR = min(width, height); // 大きさは幅と高さのうち小さい方\r\n\r\n  drawCircle(black, maxR);\r\n  drawArcs(green, red, maxR * 0.8);\r\n  // BLANK[1] (hint: drawArcs x 3, drawCircle x 1)\r\n  drawArcs()\r\n  drawArcs()\r\n  drawArcs()\r\n  drawCircle(green,maxR*0.1);\r\n  drawCircle(red, maxR * 0.05);\r\n}\r\n\r\nfunction drawCircle(c, r){\r\n  fill(c);\r\n  ellipse(cx, cy, r, r);\r\n}\r\n\r\nfunction drawArcs(c1, c2, r) {\r\n  for (let i = 0; i < 20; i++) {\r\n    let start = TWO_PI / 20 * i;\r\n    let stop = TWO_PI / 20 * (i + 1);\r\n    fill(i % 2 == 0 ? c1 : c2);\r\n    arc(cx, cy, r, r, start, stop, PIE);\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
