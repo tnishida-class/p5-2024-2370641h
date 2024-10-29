@@ -1469,6 +1469,756 @@
           ]
         }
       }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/22/2024, 11:56:44 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+10;\r\n  }else{\r\n    size= count-10;}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/22/2024, 11:59:10 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+10;\r\n  }else{\r\n    size= (cycle-count)-10;}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 10:35:44 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+10;\r\n  }else{\r\n    size= (cycle-count)-10;}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 10:58:09 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+10;\r\n  }else{\r\n    size= (cycle/2-count)-10;}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 10:58:15 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+10;\r\n  }else{\r\n    size= (cycle/2-count)-10;}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 10:58:35 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+10;\r\n  }else{\r\n    size= ((cycle/2)-count)-10;}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 10:58:55 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+10;\r\n  }else{\r\n    size= (cycle-count)-10;}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 10:59:18 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle){\r\n    size= count+10;\r\n  }else{\r\n    size= (cycle-count)-10;}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 11:01:54 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+10;\r\n  }else{\r\n    size= (cycle-count)-10;}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 11:16:44 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+10;\r\n  }else{\r\n    size= (cycle-count);}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 11:16:47 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+10;\r\n  }else{\r\n    size= (cycle-count);}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 11:17:07 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+10;\r\n  }else{\r\n    size= (cycle-count)-10;}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 11:17:22 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+20;\r\n  }else{\r\n    size= (cycle-count)-10;}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 11:17:34 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+20;\r\n  }else{\r\n    size= (cycle-count)-20;}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 11:17:47 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+10;\r\n  }else{\r\n    size= (cycle-count);}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 11:20:10 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+40;\r\n  }else{\r\n    size= (cycle-count);}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 11:20:21 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+40;\r\n  }else{\r\n    size= (cycle-count)-40;}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 11:21:20 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+40;\r\n  }else{\r\n    size= (cycle-count)+40;}// BLANK[1]\r\n\r\n  ellipse(width / 2, height / 2, size);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 11:29:03 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+40;\r\n  }else{\r\n    size= (cycle-count)+40;}// BLANK[1]\r\n  ellipse(width / 2, height / 2, size);\r\n\r\n  if(keyIsDown(UP_ARROW)){count=(count+30)%cycle;}\r\n}\r\n\r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 11:29:22 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+40;\r\n  }else{\r\n    size= (cycle-count)+40;}// BLANK[1]\r\n  ellipse(width / 2, height / 2, size);\r\n\r\n  if(keyIsDown(UP_ARROW)){count=(count+10)%cycle;}\r\n}\r\n\r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 11:29:48 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+40;\r\n  }else{\r\n    size= (cycle-count)+40;}// BLANK[1]\r\n  ellipse(width / 2, height / 2, size);\r\n\r\n  if(keyIsDown(UP_ARROW)){count=(count+7)%cycle;}\r\n}\r\n\r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 11:30:02 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」\r\nlet count;\r\nlet cycle;\r\n\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  count = 0;\r\n  cycle = 100;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  count = (count + 1) % cycle;\r\n  if (count<cycle/2){\r\n    size= count+40;\r\n  }else{\r\n    size= (cycle-count)+40;}// BLANK[1]\r\n  ellipse(width / 2, height / 2, size);\r\n\r\n  if(keyIsDown(UP_ARROW)){count=(count+5)%cycle;}\r\n}\r\n\r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 12:02:00 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  ellipse(x, y, 50);\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n  x+=vx;\r\n  y+=vy;\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(keyIsDown(\" \".charCodeAt(0))){ x-= 10; }\r\n  if(keyIsDown(\"f\".charCodeAt(0))){vx=2;vy=2;}\r\n}\r\n\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 12:03:48 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  ellipse(x, y, 50);\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n  x+=vx;\r\n  y+=vy;\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(keyIsDown(\" \".charCodeAt(0))){ x-= 10; }\r\n  if(keyIsDown(\"f\".charCodeAt(0))){vx=2*vx;vy=2*vy;}\r\n}\r\n\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 12:05:33 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  ellipse(x, y, 50);\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n\r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(keyIsDown(\" \".charCodeAt(0))){ x-= 10; }\r\n  if(keyIsDown(\"f\".charCodeAt(0))){vx=-1*vx;vy=-1*vy;}\r\n}\r\n\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 12:06:04 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  ellipse(x, y, 50);\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n\r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(keyIsDown(\" \".charCodeAt(0))){ x-= 10; }\r\n  if(keyIsDown(\"f\".charCodeAt(0))){vx=-10*vx;vy=-10*vy;}\r\n}\r\n\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 12:06:39 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=2;\r\n  vy=2;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  ellipse(x, y, 50);\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n\r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(keyIsDown(\" \".charCodeAt(0))){ x-= 10; }\r\n  if(keyIsDown(\"f\".charCodeAt(0))){vx=-10*vx;vy=-10*vy;}\r\n}\r\n\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 12:07:54 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=1;\r\n  vy=1;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  ellipse(x, y, 50);\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n\r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(keyIsDown(\" \".charCodeAt(0))){ x-= 10; }\r\n  if(keyIsDown(\"f\".charCodeAt(0))){vx=-10*vx;vy=-10*vy;}\r\n}\r\n\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 12:08:24 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  //vx=1;\r\n  //vy=1;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  ellipse(x, y, 50);\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n\r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(keyIsDown(\" \".charCodeAt(0))){ x-= 10; }\r\n  if(keyIsDown(\"f\".charCodeAt(0))){vx=-10*vx;vy=-10*vy;}\r\n}\r\n\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 12:08:35 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  //vx=1;\r\n  // vy=1;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  ellipse(x, y, 50);\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n\r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(keyIsDown(\" \".charCodeAt(0))){ x-= 10; }\r\n  if(keyIsDown(\"f\".charCodeAt(0))){vx=-10*vx;vy=-10*vy;}\r\n}\r\n\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 12:08:50 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  ellipse(x, y, 50);\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n\r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(keyIsDown(\" \".charCodeAt(0))){ x-= 10; }\r\n  if(keyIsDown(\"f\".charCodeAt(0))){vx=-10*vx;vy=-10*vy;}\r\n}\r\n\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 12:12:46 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  ellipse(x, y, 50);\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n\r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(keyIsDown(\" \".charCodeAt(0))){ x-= 10; }\r\n  if(keyIsDown(\"f\".charCodeAt(0))){vx=10*vx; vy=10*vy;}\r\n}\r\n\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 12:28:17 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  ellipse(x, y, 50);\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n\r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(keyIsDown(\" \".charCodeAt(0))){ x-= 10; }\r\n  if(keyIsDown(\"f\".charCodeAt(0))){vx=10*vx; }\r\n}\r\n\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 12:28:39 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  ellipse(x, y, 50);\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n\r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(keyIsDown(\" \".charCodeAt(0))){ x-= 10; }\r\n  if(keyIsDown(\"f\".charCodeAt(0))){vx=10*vx; vy=10*vy;}\r\n}\r\n\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 2:26:33 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  ellipse(x, y, 50);\r\n\r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(keyIsDown(\" \".charCodeAt(0))){ x-= 10; }\r\n  \r\n  if(keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(LEFT_ARROW)||keyIsDown(UP_ARROW))){\r\n    vx = -10;\r\n    vy = -10;\r\n  } else if (keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(RIGHT_ARROW)||keyIsDown(DOWN_ARROW))){\r\n    vx = 10;\r\n    vy = 10;\r\n  }  else {\r\n    vx = 0;\r\n    vy = 0;\r\n  }\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n}\r\n\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 2:33:35 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  ellipse(x, y, 50);\r\n\r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(keyIsDown(\" \".charCodeAt(0))){ x-= 10; }\r\n  \r\n  if(keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(LEFT_ARROW)||keyIsDown(UP_ARROW))){\r\n    vx = -10;\r\n    vy = -10;\r\n  } else if (keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(RIGHT_ARROW)||keyIsDown(DOWN_ARROW))){\r\n    vx = 10;\r\n    vy = 10;\r\n  }  else {\r\n    vx = 0;\r\n    vy = 0;\r\n  }\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n}\r\n\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 4:36:55 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\nconst g=1;\r\nconst jump=20;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  ellipse(x, y, 50);\r\n  line(0,height-ground,width,height-ground);\r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(y<height-y-25){\r\n    vy+=g;\r\n  }else{\r\n    vy=0;\r\n    y=height-y-25;\r\n  }\r\n  \r\n  if(keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(LEFT_ARROW)||keyIsDown(UP_ARROW))){\r\n    vx = -10;\r\n    vy = -10;\r\n  } else if (keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(RIGHT_ARROW)||keyIsDown(DOWN_ARROW))){\r\n    vx = 10;\r\n    vy = 10;\r\n  }  else {\r\n    vx = 0;\r\n    vy = 0;\r\n  }\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n}\r\nfunction keyPressed(){\r\n  if(key==\" \"){\r\n    if(y>=height-y-25)\r\n      vy=-jump;\r\n  }\r\n}\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 4:40:55 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\nconst g=1;\r\nconst jump=20;\r\nconst ground=20;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  line(0,height-ground,width,height-ground);\r\n  ellipse(x, y, 50);\r\n  \r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(y<height-y-25){\r\n    vy+=g;\r\n  }else{\r\n    vy=0;\r\n    y=height-y-25;\r\n  }\r\n  \r\n  if(keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(LEFT_ARROW)||keyIsDown(UP_ARROW))){\r\n    vx = -10;\r\n    vy = -10;\r\n  } else if (keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(RIGHT_ARROW)||keyIsDown(DOWN_ARROW))){\r\n    vx = 10;\r\n    vy = 10;\r\n  }  else {\r\n    vx = 0;\r\n    vy = 0;\r\n  }\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n}\r\nfunction keyPressed(){\r\n  if(key==\" \"){\r\n    if(y>=height-y-25)\r\n      vy=-jump;\r\n  }\r\n}\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 4:43:37 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\nconst g=1;\r\nconst jump=20;\r\nconst ground=20;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  line(0,height-ground,width,height-ground);\r\n  ellipse(x, y, 50);\r\n  \r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(y<height-y-25){\r\n    vy+=g;\r\n  }else{\r\n    vy=0;\r\n    y=height-y-25;\r\n  }\r\n  \r\n  if(keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(LEFT_ARROW)||keyIsDown(UP_ARROW))){\r\n    vx = -10;\r\n    \r\n  } else if (keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(RIGHT_ARROW)||keyIsDown(DOWN_ARROW))){\r\n    vx = 10;\r\n    \r\n  }  else {\r\n    vx = 0;\r\n    \r\n  }\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n}\r\nfunction keyPressed(){\r\n  if(key==\" \"){\r\n    if(y>=height-y-25)\r\n      vy=-jump;\r\n  }\r\n}\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 4:44:44 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\nconst g=1;\r\nconst jump=20;\r\nconst ground=20;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = 20;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  line(0,height-ground,width,height-ground);\r\n  ellipse(x, y, 50);\r\n  \r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n  if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n  if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(y<height-y-25){\r\n    vy+=g;\r\n  }else{\r\n    vy=0;\r\n    y=height-y-25;\r\n  }\r\n  \r\n  if(keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(LEFT_ARROW)||keyIsDown(UP_ARROW))){\r\n    vx = -10;\r\n    \r\n  } else if (keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(RIGHT_ARROW)||keyIsDown(DOWN_ARROW))){\r\n    vx = 10;\r\n    \r\n  }  else {\r\n    vx = 0;\r\n    \r\n  }\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n}\r\nfunction keyPressed(){\r\n  if(key==\" \"){\r\n    if(y>=height-y-25)\r\n      vy=-jump;\r\n  }\r\n}\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 4:51:12 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\nconst g=1;\r\nconst jump=20;\r\nconst ground=20;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  line(0,height-ground,width,height-ground);\r\n  ellipse(x, y, 50,50);\r\n  \r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n // if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n // if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n  if(y<height-y-25){\r\n    vy+=g;\r\n  }else{\r\n    vy=0;\r\n    y=height-y-25;\r\n  }\r\n  \r\n  if(keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(LEFT_ARROW)||keyIsDown(UP_ARROW))){\r\n    vx = -10;\r\n    //vy = -10;\r\n  } else if (keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(RIGHT_ARROW)||keyIsDown(DOWN_ARROW))){\r\n    vx = 10;\r\n    //vy = 10;\r\n  }  else {\r\n    vx = 0;\r\n    //vy = 0;\r\n  }\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n}\r\nfunction keyPressed(){\r\n  if(key==\" \"){\r\n    if(y>=height-y-25)\r\n      vy=-jump;\r\n  }\r\n}\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 4:53:50 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\nconst g=1;\r\nconst jump=50;\r\nconst ground=50;\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  line(0,height-ground,width,height-ground);\r\n  ellipse(x, y, 50,50);\r\n  \r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n // if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n // if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n\r\n  if(y<height-y-25){\r\n    vy+=g;\r\n  }else{\r\n    vy=0;\r\n    y=height-y-25;\r\n  }\r\n  \r\n  if(keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(LEFT_ARROW)||keyIsDown(UP_ARROW))){\r\n    vx = -10;\r\n    //vy = -10;\r\n  } else if (keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(RIGHT_ARROW)||keyIsDown(DOWN_ARROW))){\r\n    vx = 10;\r\n    //vy = 10;\r\n  }  else {\r\n    vx = 0;\r\n    //vy = 0;\r\n  }\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n}\r\nfunction keyPressed(){\r\n  if(key==\" \"){\r\n    if(y>=height-y-25)\r\n      vy=-jump;\r\n  }\r\n}\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 4:57:27 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\nconst g=1;\r\nconst jump=20;\r\nconst ground=20;\r\nconst size=20\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  line(0,height-ground,width,height-ground);\r\n  ellipse(x, y, size,size);\r\n  \r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n // if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n // if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n\r\n  if(y<height-y-size){\r\n    vy+=g;\r\n  }else{\r\n    vy=0;\r\n    y=height-y-size;\r\n  }\r\n  \r\n  if(keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(LEFT_ARROW)||keyIsDown(UP_ARROW))){\r\n    vx = -10;\r\n    //vy = -10;\r\n  } else if (keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(RIGHT_ARROW)||keyIsDown(DOWN_ARROW))){\r\n    vx = 10;\r\n    //vy = 10;\r\n  }  else {\r\n    vx = 0;\r\n    //vy = 0;\r\n  }\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n}\r\nfunction keyPressed(){\r\n  if(key==\" \"){\r\n    if(y>=height-y-size)\r\n      vy=-jump;\r\n  }\r\n}\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 4:58:12 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\nconst g=1;\r\nconst jump=20;\r\nconst ground=20;\r\nconst size=20\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  line(0,height/2+size/2,width,height/2+size);\r\n  ellipse(x, y, size,size);\r\n  \r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n // if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n // if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n\r\n  if(y<height-y-size){\r\n    vy+=g;\r\n  }else{\r\n    vy=0;\r\n    y=height-y-size;\r\n  }\r\n  \r\n  if(keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(LEFT_ARROW)||keyIsDown(UP_ARROW))){\r\n    vx = -10;\r\n    //vy = -10;\r\n  } else if (keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(RIGHT_ARROW)||keyIsDown(DOWN_ARROW))){\r\n    vx = 10;\r\n    //vy = 10;\r\n  }  else {\r\n    vx = 0;\r\n    //vy = 0;\r\n  }\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n}\r\nfunction keyPressed(){\r\n  if(key==\" \"){\r\n    if(y>=height-y-size)\r\n      vy=-jump;\r\n  }\r\n}\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 4:58:24 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\nconst g=1;\r\nconst jump=20;\r\nconst ground=20;\r\nconst size=20\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  line(0,height/2+size/2,width,height/2+size/2);\r\n  ellipse(x, y, size,size);\r\n  \r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n // if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n // if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n\r\n  if(y<height-y-size){\r\n    vy+=g;\r\n  }else{\r\n    vy=0;\r\n    y=height-y-size;\r\n  }\r\n  \r\n  if(keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(LEFT_ARROW)||keyIsDown(UP_ARROW))){\r\n    vx = -10;\r\n    //vy = -10;\r\n  } else if (keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(RIGHT_ARROW)||keyIsDown(DOWN_ARROW))){\r\n    vx = 10;\r\n    //vy = 10;\r\n  }  else {\r\n    vx = 0;\r\n    //vy = 0;\r\n  }\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n}\r\nfunction keyPressed(){\r\n  if(key==\" \"){\r\n    if(y>=height-y-size)\r\n      vy=-jump;\r\n  }\r\n}\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 4:59:28 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\nconst g=1;\r\nconst jump=20;\r\nconst ground=20;\r\nconst size=20\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  line(0,height/2,width,height/2+size/2);\r\n  ellipse(x, y, size,size);\r\n  \r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n // if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n // if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n\r\n  if(y<height-y-size){\r\n    vy+=g;\r\n  }else{\r\n    vy=0;\r\n    y=height-y-size;\r\n  }\r\n  \r\n  if(keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(LEFT_ARROW)||keyIsDown(UP_ARROW))){\r\n    vx = -10;\r\n    //vy = -10;\r\n  } else if (keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(RIGHT_ARROW)||keyIsDown(DOWN_ARROW))){\r\n    vx = 10;\r\n    //vy = 10;\r\n  }  else {\r\n    vx = 0;\r\n    //vy = 0;\r\n  }\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n}\r\nfunction keyPressed(){\r\n  if(key==\" \"){\r\n    if(y>=height-y-size)\r\n      vy=-jump;\r\n  }\r\n}\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 4:59:33 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\nconst g=1;\r\nconst jump=20;\r\nconst ground=20;\r\nconst size=20\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  line(0,height/2,width,height/2+);\r\n  ellipse(x, y, size,size);\r\n  \r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n // if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n // if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n\r\n  if(y<height-y-size){\r\n    vy+=g;\r\n  }else{\r\n    vy=0;\r\n    y=height-y-size;\r\n  }\r\n  \r\n  if(keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(LEFT_ARROW)||keyIsDown(UP_ARROW))){\r\n    vx = -10;\r\n    //vy = -10;\r\n  } else if (keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(RIGHT_ARROW)||keyIsDown(DOWN_ARROW))){\r\n    vx = 10;\r\n    //vy = 10;\r\n  }  else {\r\n    vx = 0;\r\n    //vy = 0;\r\n  }\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n}\r\nfunction keyPressed(){\r\n  if(key==\" \"){\r\n    if(y>=height-y-size)\r\n      vy=-jump;\r\n  }\r\n}\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/26/2024, 4:59:38 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\nconst g=1;\r\nconst jump=20;\r\nconst ground=20;\r\nconst size=20\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  line(0,height/2,width,height/2);\r\n  ellipse(x, y, size,size);\r\n  \r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n // if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n // if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n\r\n  if(y<height-y-size){\r\n    vy+=g;\r\n  }else{\r\n    vy=0;\r\n    y=height-y-size;\r\n  }\r\n  \r\n  if(keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(LEFT_ARROW)||keyIsDown(UP_ARROW))){\r\n    vx = -10;\r\n    //vy = -10;\r\n  } else if (keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(RIGHT_ARROW)||keyIsDown(DOWN_ARROW))){\r\n    vx = 10;\r\n    //vy = 10;\r\n  }  else {\r\n    vx = 0;\r\n    //vy = 0;\r\n  }\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n}\r\nfunction keyPressed(){\r\n  if(key==\" \"){\r\n    if(y>=height-y-size)\r\n      vy=-jump;\r\n  }\r\n}\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/29/2024, 10:57:37 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「キーボード操作に反応する」\r\nlet x, y;\r\nlet vx,vy;\r\nconst g=1;\r\nconst jump=20;\r\nconst ground=20;\r\nconst size=50\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  x = width / 2;\r\n  y = height / 2;\r\n  vx=0;\r\n  vy=0;\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  line(0,height/2,width,height/2);\r\n  ellipse(x, y, size,size);\r\n  \r\n  x += vx;\r\n  y += vy;\r\n\r\n  if(keyIsDown(LEFT_ARROW)){ x -= 5; }\r\n  if(keyIsDown(RIGHT_ARROW)){ x += 5; }\r\n // if(keyIsDown(UP_ARROW)){ y -= 5; }\r\n // if(keyIsDown(DOWN_ARROW)){ y += 5; }\r\n  if(keyIsDown(\"A\".charCodeAt(0))){ x+= 10; }\r\n\r\n  if(y<height-y-size){\r\n    vy+=g;\r\n  }else{\r\n    vy=0;\r\n    y=height-y-size;\r\n  }\r\n  \r\n  if(keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(LEFT_ARROW)||keyIsDown(UP_ARROW))){\r\n    vx = -10;\r\n    //vy = -10;\r\n  } else if (keyIsDown(\"F\".charCodeAt(0))&&(keyIsDown(RIGHT_ARROW)||keyIsDown(DOWN_ARROW))){\r\n    vx = 10;\r\n    //vy = 10;\r\n  }  else {\r\n    vx = 0;\r\n    //vy = 0;\r\n  }\r\n  x=constrain(x,0,width);\r\n  y=constrain(y,0,height);\r\n}\r\nfunction keyPressed(){\r\n  if(key==\" \"){\r\n    if(y>=height-y-size)\r\n      vy=-jump;\r\n  }\r\n}\r\n// イベントハンドラを使用するパターン\r\n// function keyPressed(){\r\n//   if(keyCode == LEFT_ARROW){ x -= 5; }\r\n//   else if(keyCode == RIGHT_ARROW){ x+= 5; }\r\n//   else if(keyCode == DOWN_ARROW){ y += 5; }\r\n//   else if(keyCode == UP_ARROW){ y -= 5; }\r\n//   else if(key == \"A\"){ x += 10; }\r\n// }\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/29/2024, 11:13:10 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// ギリシャ国旗\r\n\r\n\r\n\r\nfunction setup() {\r\n  createCanvas(270, 180);\r\n  background(\"red\");\r\n  \r\n  noStroke();\r\n  quad(0,0,55,0,55,180,0,180);\r\n  \r\n  let d = height/5;\r\n for(let i=0; i<5; i++){\r\n   fill(\"white\");\r\n   triangle(55,i*d,55,(i+1)*d,100,((i*2+1)*d)/2);\r\n   \r\n }\r\n  \r\n}\r\n"
+            }
+          ]
+        }
+      }
     }
   ]
 }
