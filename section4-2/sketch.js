@@ -22,8 +22,9 @@ function draw(){
 function mouseDragged(){
   const dx = mouseX - pmouseX;
   const dy = mouseY - pmouseY;
-  if(mag(dx, dy) > 5){
-    const b = { x: mouseX, y: mouseY, size: 20, vx: dx, vy: dy };
+  let size=random(30,200);
+  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ
+    const b = { x: mouseX, y: mouseY, size, vx: dx, vy: dy };
     balls.push(b);
   }
 }

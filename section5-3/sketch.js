@@ -2,6 +2,8 @@
 function setup(){
   createCanvas(200, 200);
   calendar(2019, 10);
+  let s=daysInYear(2001);
+  text("日数："+s,10,30);
 
   // isLeapYear の動作確認のため console に出力しています
   for(let i = 2000; i <= 2100; i++){
@@ -26,6 +28,11 @@ function isLeapYear(y){
 }
 
 function daysInYear(y){
+  if(isLeapYear(y)){
+    return 366;
+  }else{
+    return 365;
+  }
   // BLANK[1]
 }
 
@@ -51,6 +58,28 @@ function dayOfYear(y, m, d){
 
 function dayOfWeek(y, m, d){
   // BLANK[2]
+  //let day=2024,1,1,月
+  let dayCount=0;
+  const baseYear=2024;
+  const baseMonth=1;
+  const baseDay=1;
+  const baseDayWeek=1;
+
+  if(y>=baseYear){
+  for(let i=baseYear;y>i;i++){
+  dayCount+=daysInYear(i);
+}} else{
+  for(let i=y;i<baseYear;i++){
+    dayCount-=daysInYear(i)
+  }
+}
+
+for(let i=baseMonth;i<m;i++){
+  dayCount+=daysInMonth(y,i);
+}
+dayCount+=(d-baseDay);
+return(baseDayWeek+dayCount%7+7)%7
+
 }
 
 function dayOfWeekAsString(dow){
