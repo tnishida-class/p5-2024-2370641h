@@ -20,7 +20,8 @@ function setup(){
   // ここから平均・最大・最小を求めます
   let average, largest, smallest;
  
-  average=sum/scores.length;console.log(average); // BLANK[1]　平均値（ヒント average = 合計 / 配列の長さ）
+  average=sum/scores.length;
+  console.log(average); // BLANK[1]　平均値（ヒント average = 合計 / 配列の長さ）
 
   largest = 0;
   for(let i = 0; i < scores.length; i++){
@@ -46,7 +47,7 @@ function setup(){
 
   for(let i = 0; i < scores.length; i++){
     const dx = width / scores.length;
-    const h = height * scores[i] / 100; // 棒の高さ（点数に比例）
+    const h = height * scores[i] /100 ; // 棒の高さ（点数に比例）
     if (scores[i]==largest){
       fill("red");
     }else if (scores[i]==smallest){

@@ -5,7 +5,7 @@ function setup(){
   background("blue");
   for(let i = 0; i < 12; i++){
     let theta = TWO_PI * i / 12;
-    let x = 140 + cos(theta) * 50;
+    let x = 135+ cos(theta) * 50;
     let y = 90 + sin(theta) * 50;
     star(x, y, 10);
   }

@@ -65,10 +65,12 @@ function dayOfWeek(y, m, d){
   const baseDay=1;
   const baseDayWeek=1;
 
-  if(y>=baseYear){
+  if(y>baseYear){
   for(let i=baseYear;y>i;i++){
   dayCount+=daysInYear(i);
-}} else{
+}for(let i=dayOfYear;i<m;i++){
+  dayCount+=dayOfYear(y,i,d);}
+} else{
   for(let i=y;i<baseYear;i++){
     dayCount-=daysInYear(i)
   }

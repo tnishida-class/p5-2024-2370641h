@@ -3329,6 +3329,756 @@
           ]
         }
       }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 11:12:07 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「配列を使った描画」練習問題：円グラフ\r\n\r\nfunction setup(){\r\n  createCanvas(400, 400);\r\n  background(240);\r\n\r\n  // 配列をランダムに初期化する\r\n  let scores = [];\r\n  for(let i = 0; i < 10; i++){\r\n    scores[i] = random(20, 100); // 60以上100未満のランダムな数を代入\r\n  }\r\n\r\n  // 円グラフを描くには割合が必要なので合計を計算しておく\r\n  let total = 0;\r\n  for(let i = 0; i < scores.length; i++){ total += scores[i]; }\r\n\r\n\r\ncx=width/2;\r\ncy=height/2;\r\nconst r =min(width,height);\r\n\r\nlet start=0;\r\nfor(let i =0;i<scores.length;i++){\r\n  let angle=scores[i]/total*TWO_PI\r\n  arc(cx,cy,r,r,start,start+angle,PIE);\r\n  start+=angle;\r\n  text(scores[i].toPrecision(3),cos((start*2+angle)/2)*r*i,sin((start*2+angle)/2*r*i));\r\n}\r\n  // BLANK[1]\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 11:35:50 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「配列を使った描画」練習問題：円グラフ\r\n\r\nfunction setup(){\r\n  createCanvas(400, 400);\r\n  background(240);\r\n\r\n  // 配列をランダムに初期化する\r\n  let scores = [];\r\n  for(let i = 0; i < 10; i++){\r\n    scores[i] = random(20, 100); // 60以上100未満のランダムな数を代入\r\n  }\r\n\r\n  // 円グラフを描くには割合が必要なので合計を計算しておく\r\n  let total = 0;\r\n  for(let i = 0; i < scores.length; i++){ total += scores[i]; }\r\n\r\n\r\ncx=width/2;\r\ncy=height/2;\r\nconst r =min(width,height);\r\n\r\nlet start=0;\r\nfor(let i =0;i<scores.length;i++){\r\n  let angle=scores[i]/total*TWO_PI\r\n  arc(cx,cy,r,r,start,start+angle,PIE);\r\n text(scores[i].toPrecision(3),cos((start*2+angle)/2)*r,sin((start*2+angle)/2*r));\r\n start+=angle;\r\n}\r\n  // BLANK[1]\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 11:36:43 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「配列を使った描画」練習問題：円グラフ\r\n\r\nfunction setup(){\r\n  createCanvas(400, 400);\r\n  background(240);\r\n\r\n  // 配列をランダムに初期化する\r\n  let scores = [];\r\n  for(let i = 0; i < 10; i++){\r\n    scores[i] = random(20, 100); // 60以上100未満のランダムな数を代入\r\n  }\r\n\r\n  // 円グラフを描くには割合が必要なので合計を計算しておく\r\n  let total = 0;\r\n  for(let i = 0; i < scores.length; i++){ total += scores[i]; }\r\n\r\n\r\ncx=width/2;\r\ncy=height/2;\r\nconst r =min(width,height);\r\n\r\nlet start=0;\r\nfor(let i =0;i<scores.length;i++){\r\n  let angle=scores[i]/total*TWO_PI\r\n  arc(cx,cy,r,r,start,start+angle,PIE);\r\n text(scores[i].toPrecision(3),cos((start*2+angle)/2)*r,sin((start*2+angle)/2)*r);\r\n start+=angle;\r\n}\r\n  // BLANK[1]\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 11:37:01 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「配列を使った描画」練習問題：円グラフ\r\n\r\nfunction setup(){\r\n  createCanvas(400, 400);\r\n  background(240);\r\n\r\n  // 配列をランダムに初期化する\r\n  let scores = [];\r\n  for(let i = 0; i < 10; i++){\r\n    scores[i] = random(20, 100); // 60以上100未満のランダムな数を代入\r\n  }\r\n\r\n  // 円グラフを描くには割合が必要なので合計を計算しておく\r\n  let total = 0;\r\n  for(let i = 0; i < scores.length; i++){ total += scores[i]; }\r\n\r\n\r\ncx=width/2;\r\ncy=height/2;\r\nconst r =min(width,height);\r\n\r\nlet start=0;\r\nfor(let i =0;i<scores.length;i++){\r\n  let angle=scores[i]/total*TWO_PI\r\n  arc(cx,cy,r,r,start,start+angle,PIE);\r\n text(scores[i].toPrecision(3),cos((start*2+angle)/2)*r/2,sin((start*2+angle)/2)*r/2);\r\n start+=angle;\r\n}\r\n  // BLANK[1]\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 11:38:37 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「配列を使った描画」練習問題：円グラフ\r\n\r\nfunction setup(){\r\n  createCanvas(400, 400);\r\n  background(240);\r\n\r\n  // 配列をランダムに初期化する\r\n  let scores = [];\r\n  for(let i = 0; i < 10; i++){\r\n    scores[i] = random(20, 100); // 60以上100未満のランダムな数を代入\r\n  }\r\n\r\n  // 円グラフを描くには割合が必要なので合計を計算しておく\r\n  let total = 0;\r\n  for(let i = 0; i < scores.length; i++){ total += scores[i]; }\r\n\r\n\r\ncx=width/2;\r\ncy=height/2;\r\nconst r =min(width,height);\r\n\r\nlet start=0;\r\nfor(let i =0;i<scores.length;i++){\r\n  let angle=scores[i]/total*TWO_PI\r\n  arc(cx,cy,r,r,start,start+angle,PIE);\r\n text(scores[i].toPrecision(3),cx+cos((start*2+angle)/2)*r,cy+sin((start*2+angle)/2)*r);\r\n start+=angle;\r\n}\r\n  // BLANK[1]\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 11:40:47 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「配列を使った描画」練習問題：円グラフ\r\n\r\nfunction setup(){\r\n  createCanvas(400, 400);\r\n  background(240);\r\n\r\n  // 配列をランダムに初期化する\r\n  let scores = [];\r\n  for(let i = 0; i < 10; i++){\r\n    scores[i] = random(20, 100); // 60以上100未満のランダムな数を代入\r\n  }\r\n\r\n  // 円グラフを描くには割合が必要なので合計を計算しておく\r\n  let total = 0;\r\n  for(let i = 0; i < scores.length; i++){ total += scores[i]; }\r\n\r\n\r\ncx=width/2;\r\ncy=height/2;\r\nconst r =min(width,height);\r\n\r\nlet start=0;\r\nfor(let i =0;i<scores.length;i++){\r\n  let angle=scores[i]/total*TWO_PI\r\n  arc(cx,cy,r,r,start,start+angle,PIE);\r\n text(scores[i].toPrecision(3),cx+cos((start+angle)/2)*r,cy+sin((start+angle)/2)*r);\r\n start+=angle;\r\n}\r\n  // BLANK[1]\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 11:41:07 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「配列を使った描画」練習問題：円グラフ\r\n\r\nfunction setup(){\r\n  createCanvas(400, 400);\r\n  background(240);\r\n\r\n  // 配列をランダムに初期化する\r\n  let scores = [];\r\n  for(let i = 0; i < 10; i++){\r\n    scores[i] = random(20, 100); // 60以上100未満のランダムな数を代入\r\n  }\r\n\r\n  // 円グラフを描くには割合が必要なので合計を計算しておく\r\n  let total = 0;\r\n  for(let i = 0; i < scores.length; i++){ total += scores[i]; }\r\n\r\n\r\ncx=width/2;\r\ncy=height/2;\r\nconst r =min(width,height);\r\n\r\nlet start=0;\r\nfor(let i =0;i<scores.length;i++){\r\n  let angle=scores[i]/total*TWO_PI\r\n  arc(cx,cy,r,r,start,start+angle,PIE);\r\n text(scores[i].toPrecision(3),cx+cos((start*2+angle)/2)*r/2,cy+sin((start*2+angle)/2)*r/2);\r\n start+=angle;\r\n}\r\n  // BLANK[1]\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 11:41:53 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「配列を使った描画」練習問題：円グラフ\r\n\r\nfunction setup(){\r\n  createCanvas(400, 400);\r\n  background(240);\r\n\r\n  // 配列をランダムに初期化する\r\n  let scores = [];\r\n  for(let i = 0; i < 10; i++){\r\n    scores[i] = random(20, 100); // 60以上100未満のランダムな数を代入\r\n  }\r\n\r\n  // 円グラフを描くには割合が必要なので合計を計算しておく\r\n  let total = 0;\r\n  for(let i = 0; i < scores.length; i++){ total += scores[i]; }\r\n\r\n\r\ncx=width/2;\r\ncy=height/2;\r\nconst r =min(width,height);\r\n\r\nlet start=0;\r\nfor(let i =0;i<scores.length;i++){\r\n  let angle=scores[i]/total*TWO_PI\r\n  arc(cx,cy,r,r,start,start+angle,PIE);\r\n text(scores[i].toPrecision(3),cx+cos((start*2+angle)/2)*r/4,cy+sin((start*2+angle)/2)*r/4);\r\n start+=angle;\r\n}\r\n  // BLANK[1]\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 11:41:58 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「配列を使った描画」練習問題：円グラフ\r\n\r\nfunction setup(){\r\n  createCanvas(400, 400);\r\n  background(240);\r\n\r\n  // 配列をランダムに初期化する\r\n  let scores = [];\r\n  for(let i = 0; i < 10; i++){\r\n    scores[i] = random(20, 100); // 60以上100未満のランダムな数を代入\r\n  }\r\n\r\n  // 円グラフを描くには割合が必要なので合計を計算しておく\r\n  let total = 0;\r\n  for(let i = 0; i < scores.length; i++){ total += scores[i]; }\r\n\r\n\r\ncx=width/2;\r\ncy=height/2;\r\nconst r =min(width,height);\r\n\r\nlet start=0;\r\nfor(let i =0;i<scores.length;i++){\r\n  let angle=scores[i]/total*TWO_PI\r\n  arc(cx,cy,r,r,start,start+angle,PIE);\r\n text(scores[i].toPrecision(3),cx+cos((start*2+angle)/2)*r/4,cy+sin((start*2+angle)/2)*r/4);\r\n start+=angle;\r\n}\r\n  // BLANK[1]\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 11:42:12 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「配列を使った描画」練習問題：円グラフ\r\n\r\nfunction setup(){\r\n  createCanvas(400, 400);\r\n  background(240);\r\n\r\n  // 配列をランダムに初期化する\r\n  let scores = [];\r\n  for(let i = 0; i < 10; i++){\r\n    scores[i] = random(20, 100); // 60以上100未満のランダムな数を代入\r\n  }\r\n\r\n  // 円グラフを描くには割合が必要なので合計を計算しておく\r\n  let total = 0;\r\n  for(let i = 0; i < scores.length; i++){ total += scores[i]; }\r\n\r\n\r\ncx=width/2;\r\ncy=height/2;\r\nconst r =min(width,height);\r\n\r\nlet start=0;\r\nfor(let i =0;i<scores.length;i++){\r\n  let angle=scores[i]/total*TWO_PI\r\n  arc(cx,cy,r,r,start,start+angle,PIE);\r\n text(scores[i].toPrecision(3),cx+cos((start*2+angle)/2)*r/3,cy+sin((start*2+angle)/2)*r/3);\r\n start+=angle;\r\n}\r\n  // BLANK[1]\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 11:43:15 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「配列を使った描画」練習問題：円グラフ\r\n\r\nfunction setup(){\r\n  createCanvas(400, 400);\r\n  background(240);\r\n\r\n  // 配列をランダムに初期化する\r\n  let scores = [];\r\n  for(let i = 0; i < 10; i++){\r\n    scores[i] = random(20, 100); // 60以上100未満のランダムな数を代入\r\n  }\r\n\r\n  // 円グラフを描くには割合が必要なので合計を計算しておく\r\n  let total = 0;\r\n  for(let i = 0; i < scores.length; i++){ total += scores[i]; }\r\n\r\n\r\ncx=width/2;\r\ncy=height/2;\r\nconst r =min(width,height);\r\n\r\nlet start=0;\r\nfor(let i =0;i<scores.length;i++){\r\n  let angle=scores[i]/total*TWO_PI\r\n  arc(cx,cy,r,r,start,start+angle,PIE);\r\n text(scores[i].toPrecision(3),cx+cos((start*2+angle)/2)*r/3,cy+sin((start*2+angle)/2)*r/3);\r\n textAlign=(CENTER,CENTER)\r\n start+=angle;\r\n}\r\n  // BLANK[1]\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 11:43:17 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「配列を使った描画」練習問題：円グラフ\r\n\r\nfunction setup(){\r\n  createCanvas(400, 400);\r\n  background(240);\r\n\r\n  // 配列をランダムに初期化する\r\n  let scores = [];\r\n  for(let i = 0; i < 10; i++){\r\n    scores[i] = random(20, 100); // 60以上100未満のランダムな数を代入\r\n  }\r\n\r\n  // 円グラフを描くには割合が必要なので合計を計算しておく\r\n  let total = 0;\r\n  for(let i = 0; i < scores.length; i++){ total += scores[i]; }\r\n\r\n\r\ncx=width/2;\r\ncy=height/2;\r\nconst r =min(width,height);\r\n\r\nlet start=0;\r\nfor(let i =0;i<scores.length;i++){\r\n  let angle=scores[i]/total*TWO_PI\r\n  arc(cx,cy,r,r,start,start+angle,PIE);\r\n text(scores[i].toPrecision(3),cx+cos((start*2+angle)/2)*r/3,cy+sin((start*2+angle)/2)*r/3);\r\n textAlign=(CENTER,CENTER)\r\n start+=angle;\r\n}\r\n  // BLANK[1]\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 11:43:29 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「配列を使った描画」練習問題：円グラフ\r\n\r\nfunction setup(){\r\n  createCanvas(400, 400);\r\n  background(240);\r\n\r\n  // 配列をランダムに初期化する\r\n  let scores = [];\r\n  for(let i = 0; i < 10; i++){\r\n    scores[i] = random(20, 100); // 60以上100未満のランダムな数を代入\r\n  }\r\n\r\n  // 円グラフを描くには割合が必要なので合計を計算しておく\r\n  let total = 0;\r\n  for(let i = 0; i < scores.length; i++){ total += scores[i]; }\r\n\r\n\r\ncx=width/2;\r\ncy=height/2;\r\nconst r =min(width,height);\r\n\r\nlet start=0;\r\nfor(let i =0;i<scores.length;i++){\r\n  let angle=scores[i]/total*TWO_PI\r\n  arc(cx,cy,r,r,start,start+angle,PIE);\r\n text(scores[i].toPrecision(3),cx+cos((start*2+angle)/2)*r/3,cy+sin((start*2+angle)/2)*r/3);\r\n textAlign=(CENTER,CENTER);\r\n start+=angle;\r\n}\r\n  // BLANK[1]\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 11:45:37 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「配列を使った描画」練習問題：円グラフ\r\n\r\nfunction setup(){\r\n  createCanvas(400, 400);\r\n  background(240);\r\n\r\n  // 配列をランダムに初期化する\r\n  let scores = [];\r\n  for(let i = 0; i < 10; i++){\r\n    scores[i] = random(20, 100); // 60以上100未満のランダムな数を代入\r\n  }\r\n\r\n  // 円グラフを描くには割合が必要なので合計を計算しておく\r\n  let total = 0;\r\n  for(let i = 0; i < scores.length; i++){ total += scores[i]; }\r\n\r\n\r\ncx=width/2;\r\ncy=height/2;\r\nconst r =min(width,height);\r\n\r\nlet start=0;\r\nfor(let i =0;i<scores.length;i++){\r\n  let angle=scores[i]/total*TWO_PI\r\n  arc(cx,cy,r,r,start,start+angle,PIE);\r\n text(scores[i].toPrecision(3),cos((start*2+angle)/2)*r/3,sin((start*2+angle)/2)*r/3);\r\n textAlign=(CENTER,CENTER);\r\n start+=angle;\r\n}\r\n  // BLANK[1]\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 11:45:52 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「配列を使った描画」練習問題：円グラフ\r\n\r\nfunction setup(){\r\n  createCanvas(400, 400);\r\n  background(240);\r\n\r\n  // 配列をランダムに初期化する\r\n  let scores = [];\r\n  for(let i = 0; i < 10; i++){\r\n    scores[i] = random(20, 100); // 60以上100未満のランダムな数を代入\r\n  }\r\n\r\n  // 円グラフを描くには割合が必要なので合計を計算しておく\r\n  let total = 0;\r\n  for(let i = 0; i < scores.length; i++){ total += scores[i]; }\r\n\r\n\r\ncx=width/2;\r\ncy=height/2;\r\nconst r =min(width,height);\r\n\r\nlet start=0;\r\nfor(let i =0;i<scores.length;i++){\r\n  let angle=scores[i]/total*TWO_PI\r\n  arc(cx,cy,r,r,start,start+angle,PIE);\r\n text(scores[i].toPrecision(3),cx+cos((start*2+angle)/2)*r/3,cy+sin((start*2+angle)/2)*r/3);\r\n textAlign=(CENTER,CENTER);\r\n start+=angle;\r\n}\r\n  // BLANK[1]\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 12:16:00 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「関数を使う」\r\n// 練習問題：このプログラムを改造してEUの旗を描いてみよう\r\nfunction setup(){\r\n  createCanvas(270, 180);\r\n  background(\"blue\");\r\n  for(let i = 0; i < 12; i++){\r\n    let theta = TWO_PI * i / 12;\r\n    let x = 135+ cos(theta) * 50;\r\n    let y = 90 + sin(theta) * 50;\r\n    star(x, y, 10);\r\n  }\r\n  \r\n}\r\n\r\nfunction star(cx, cy, r){\r\n  beginShape();//図形の描写ヲ始める\r\n  for(var i = 0; i < 5; i++){\r\n    let theta = TWO_PI * i * 2 / 5-HALF_PI;//ラジアン 1/5にすると正五角形になる、2/5にすることで隣の隣の頂点に結べる。-HALF_PIEがないと開始位置がx＞0、y＝0の開始位置になり、星の一番上の点が真上に来ない\r\n    let x = cx + cos(theta) * r;\r\n    let y = cy + sin(theta) * r;\r\n    vertex(x,y);\r\n  }\r\n  fill(\"yellow\");\r\n  noStroke();\r\n  \r\n  endShape(CLOSE);//図形の描写をやめる\r\n}// ヒント：section5-2 にある star 関数をここにコピーして、 draw 内で ellipse の代わりに使おう\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 2:49:43 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/12/2024, 2:49:43 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/19/2024, 11:04:31 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「関数を作る(1) 引数のある関数」\r\n// 練習問題：星を描く関数を改造して正N角形を描画する関数を作ってみよう\r\n\r\nfunction setup(){\r\n  createCanvas(300, 100);\r\n  background(200);\r\n  fill(0);\r\n  crossmark(10, 10, 90, 90);\r\n  ngmark(150, 50, 80);\r\n  regularPolygon(250, 50, 40,12);\r\n}\r\n\r\nfunction crossmark(x1, y1, x2, y2){\r\n  line(x1, y1, x2, y2);\r\n  line(x2, y1, x1, y2);\r\n}\r\n\r\nfunction ngmark(cx, cy, r){\r\n  push();\r\n  noFill();\r\n  strokeWeight(r * 0.1);\r\n  let d = sqrt(r * r / 8);\r\n  ellipse(cx, cy, r);\r\n  line(cx - d, cy - d, cx + d, cy + d);\r\n  pop();\r\n}\r\n\r\nfunction regularPolygon(cx, cy, r, n){\r\n  beginShape();\r\n  for(var i = 0; i < n; i++){\r\n    let theta = TWO_PI * i * 1 / n - HALF_PI;\r\n    let x = cx + cos(theta) * r;\r\n    let y = cy + sin(theta) * r;\r\n    vertex(x,y);\r\n  }\r\n  endShape(CLOSE);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/19/2024, 11:22:56 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet lasttime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balls = [];//??\r\n  framerate(20);\r\n}\r\n\r\nfunction draw(){\r\n  if(frameCount-lasttime>300){\r\n    const b={\r\n      x:random(10,100),\r\n      y:random(10,100),\r\n      size:50,\r\n      vx:random(-5,5),\r\n      vy:random(-5,5)\r\n    };\r\n    balls.push(b);\r\n    lasttime=frameCount;\r\n  }\r\n  background(160, 192, 255);\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n}\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = { x: mouseX, y: mouseY, size, vx: dx, vy: dy };\r\n    balls.push(b);//配列に追加\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/19/2024, 11:23:03 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet lasttime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balls = [];//??\r\n  framerate(20);\r\n}\r\n\r\nfunction draw(){\r\n  if(frameCount-lasttime>100){\r\n    const b={\r\n      x:random(10,100),\r\n      y:random(10,100),\r\n      size:50,\r\n      vx:random(-5,5),\r\n      vy:random(-5,5)\r\n    };\r\n    balls.push(b);\r\n    lasttime=frameCount;\r\n  }\r\n  background(160, 192, 255);\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n}\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = { x: mouseX, y: mouseY, size, vx: dx, vy: dy };\r\n    balls.push(b);//配列に追加\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/19/2024, 11:24:36 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet lasttime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balls = [];//??\r\n  framerate(20);\r\n}\r\n\r\nfunction draw(){\r\n  if(millis()-lasttime>100){\r\n    const b={\r\n      x:random(10,100),\r\n      y:random(10,100),\r\n      size:50,\r\n      vx:random(-5,5),\r\n      vy:random(-5,5)\r\n    };\r\n    balls.push(b);\r\n    lasttime=millis();\r\n  }\r\n  background(160, 192, 255);\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n}\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = { x: mouseX, y: mouseY, size, vx: dx, vy: dy };\r\n    balls.push(b);//配列に追加\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/19/2024, 11:25:50 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet lasttime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balls = [];//??\r\n\r\n}\r\n\r\nfunction draw(){\r\n  if(millis()-lasttime>100){\r\n    const b={\r\n      x:random(10,100),\r\n      y:random(10,100),\r\n      size:50,\r\n      vx:random(-5,5),\r\n      vy:random(-5,5)\r\n    };\r\n    balls.push(b);\r\n    lasttime=millis();\r\n  }\r\n  background(160, 192, 255);\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n}\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = { x: mouseX, y: mouseY, size, vx: dx, vy: dy };\r\n    balls.push(b);//配列に追加\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/19/2024, 11:26:23 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet lasttime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balls = [];//??\r\n\r\n}\r\n\r\nfunction draw(){\r\n  if(millis()-lasttime>100){\r\n    const b={\r\n      x:random(10,100),\r\n      y:random(10,100),\r\n      size:50,\r\n      vx:random(-5,5),\r\n      vy:random(-5,5)\r\n    };\r\n    balls.push(b);\r\n    lasttime=millis();\r\n  }\r\n  background(160, 192, 255);\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n}\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = { x: mouseX, y: mouseY, size, vx: dx, vy: dy };\r\n    balls.push(b);//配列に追加\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/19/2024, 11:26:52 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet lasttime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balls = [];//??\r\n\r\n}\r\n\r\nfunction draw(){\r\n  if(millis()-lasttime>100){\r\n    const b={\r\n      x:width/2,\r\n      y:height/2,\r\n      size:50,\r\n      vx:random(-5,5),\r\n      vy:random(-5,5)\r\n    };\r\n    balls.push(b);\r\n    lasttime=millis();\r\n  }\r\n  background(160, 192, 255);\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n}\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = { x: mouseX, y: mouseY, size, vx: dx, vy: dy };\r\n    balls.push(b);//配列に追加\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/19/2024, 11:27:11 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet lasttime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balls = [];//??\r\n\r\n}\r\n\r\nfunction draw(){\r\n  if(millis()-lasttime>500){\r\n    const b={\r\n      x:width/2,\r\n      y:height/2,\r\n      size:50,\r\n      vx:random(-5,5),\r\n      vy:random(-5,5)\r\n    };\r\n    balls.push(b);\r\n    lasttime=millis();\r\n  }\r\n  background(160, 192, 255);\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n}\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = { x: mouseX, y: mouseY, size, vx: dx, vy: dy };\r\n    balls.push(b);//配列に追加\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/19/2024, 11:27:18 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet lasttime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balls = [];//??\r\n\r\n}\r\n\r\nfunction draw(){\r\n  if(millis()-lasttime>1000){\r\n    const b={\r\n      x:width/2,\r\n      y:height/2,\r\n      size:50,\r\n      vx:random(-5,5),\r\n      vy:random(-5,5)\r\n    };\r\n    balls.push(b);\r\n    lasttime=millis();\r\n  }\r\n  background(160, 192, 255);\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n}\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = { x: mouseX, y: mouseY, size, vx: dx, vy: dy };\r\n    balls.push(b);//配列に追加\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/19/2024, 11:48:00 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「関数を作る(1) 引数のある関数」\r\n// 練習問題：星を描く関数を改造して正N角形を描画する関数を作ってみよう\r\n\r\n\r\n\r\nfunction setup(){\r\n  createCanvas(300, 100);\r\n  background(200);\r\n  fill(0);\r\n  crossmark(10, 10, 90, 90);\r\n  ngmark(150, 50, 80);\r\n  regularPolygon(250, 50, 40,7);\r\n}\r\n\r\nfunction crossmark(x1, y1, x2, y2){\r\n  line(x1, y1, x2, y2);\r\n  line(x2, y1, x1, y2);\r\n}\r\n\r\nfunction ngmark(cx, cy, r){\r\n  push();\r\n  noFill();\r\n  strokeWeight(r * 0.1);\r\n  let d = sqrt(r * r / 8);\r\n  ellipse(cx, cy, r);\r\n  line(cx - d, cy - d, cx + d, cy + d);\r\n  pop();\r\n}\r\n\r\nfunction regularPolygon(cx, cy, r, n){\r\n  beginShape();\r\n  for(var i = 0; i < n; i++){\r\n    let theta = TWO_PI * i * 1 / n - HALF_PI;\r\n    let x = cx + cos(theta) * r;\r\n    let y = cy + sin(theta) * r;\r\n    vertex(x,y);\r\n  }\r\n  endShape(CLOSE);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/19/2024, 11:55:56 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「関数を作る(2) 結果を戻す関数」～「総仕上げ：カレンダーを描画しよう」\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  calendar(2019, 10);\r\n  let s=daysInYear(2001);\r\n  text(\"日数：\"+s,10,30);\r\n\r\n  // isLeapYear の動作確認のため console に出力しています\r\n  for(let i = 2000; i <= 2100; i++){\r\n    if(isLeapYear(i)){\r\n      console.log(i + \"年はうるう年です\");\r\n    }\r\n    else{\r\n      console.log(i + \"年はうるう年ではありません\");\r\n    }\r\n  }\r\n}\r\n\r\nfunction calendar(y, m){\r\n  let dow = dayOfWeek(y, m, 1);\r\n  for(let d = 1; d <= daysInMonth(y, m); d++){\r\n    // BLANK[3] (hint: まずは daysInYear, dayOfWeek を作ろう)\r\n  }\r\n}\r\n\r\nfunction isLeapYear(y){\r\n  return (y % 4 == 0) && (y % 100 != 0) || (y % 400 == 0);\r\n}\r\n\r\nfunction daysInYear(y){\r\n  if(isLeapYear(y)){\r\n    return 366;\r\n  }else{\r\n    return 365;\r\n  }\r\n  // BLANK[1]\r\n}\r\n\r\nfunction daysInMonth(y, m){\r\n  if(m == 2){\r\n    return isLeapYear(y) ? 29 : 28;\r\n  }\r\n  else if(m == 4 || m == 6 || m == 9 || m == 11){\r\n    return 30;\r\n  }\r\n  else{\r\n    return 31;\r\n  }\r\n}\r\n\r\nfunction dayOfYear(y, m, d){\r\n  let count = 0;\r\n  for(let i = 1; i < m; i++){\r\n    count += daysInMonth(y, i);\r\n  }\r\n  return count + d;\r\n}\r\n\r\nfunction dayOfWeek(y, m, d){\r\n  // BLANK[2]\r\n  //let day=2024,1,1,月\r\n  let dayCount=0;\r\n  const baseYear=2024;\r\n  const baseMonth=1;\r\n  const baseDay=1;\r\n  const baseDayWeek=1;\r\n\r\n  if(y>baseYear){\r\n  for(let i=y;baseYear<i;i++){\r\n  dayCount+=daysInYear(i);\r\n}} else{\r\n  for(let i=y;i<baseYear;i++){\r\n    dayCount-=daysInYear(i)\r\n  }\r\n}\r\n\r\nfor(let i=baseMonth;i<m;i++){\r\n  dayCount+=daysInMonth(y,i);\r\n}\r\ndayCount+=(d-baseDay);\r\nreturn(baseDayWeek+dayCount%7+7)%7\r\n\r\n}\r\n\r\nfunction dayOfWeekAsString(dow){\r\n  const a = [\"日\", \"月\", \"火\", \"水\", \"木\", \"金\", \"土\", \"日\"];\r\n  return a[dow];\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/19/2024, 12:11:06 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// テキスト「関数を作る(2) 結果を戻す関数」～「総仕上げ：カレンダーを描画しよう」\r\nfunction setup(){\r\n  createCanvas(200, 200);\r\n  calendar(2019, 10);\r\n  let s=daysInYear(2001);\r\n  text(\"日数：\"+s,10,30);\r\n\r\n  // isLeapYear の動作確認のため console に出力しています\r\n  for(let i = 2000; i <= 2100; i++){\r\n    if(isLeapYear(i)){\r\n      console.log(i + \"年はうるう年です\");\r\n    }\r\n    else{\r\n      console.log(i + \"年はうるう年ではありません\");\r\n    }\r\n  }\r\n}\r\n\r\nfunction calendar(y, m){\r\n  let dow = dayOfWeek(y, m, 1);\r\n  for(let d = 1; d <= daysInMonth(y, m); d++){\r\n    // BLANK[3] (hint: まずは daysInYear, dayOfWeek を作ろう)\r\n  }\r\n}\r\n\r\nfunction isLeapYear(y){\r\n  return (y % 4 == 0) && (y % 100 != 0) || (y % 400 == 0);\r\n}\r\n\r\nfunction daysInYear(y){\r\n  if(isLeapYear(y)){\r\n    return 366;\r\n  }else{\r\n    return 365;\r\n  }\r\n  // BLANK[1]\r\n}\r\n\r\nfunction daysInMonth(y, m){\r\n  if(m == 2){\r\n    return isLeapYear(y) ? 29 : 28;\r\n  }\r\n  else if(m == 4 || m == 6 || m == 9 || m == 11){\r\n    return 30;\r\n  }\r\n  else{\r\n    return 31;\r\n  }\r\n}\r\n\r\nfunction dayOfYear(y, m, d){\r\n  let count = 0;\r\n  for(let i = 1; i < m; i++){\r\n    count += daysInMonth(y, i);\r\n  }\r\n  return count + d;\r\n}\r\n\r\nfunction dayOfWeek(y, m, d){\r\n  // BLANK[2]\r\n  //let day=2024,1,1,月\r\n  let dayCount=0;\r\n  const baseYear=2024;\r\n  const baseMonth=1;\r\n  const baseDay=1;\r\n  const baseDayWeek=1;\r\n\r\n  if(y>baseYear){\r\n  for(let i=baseYear;y>i;i++){\r\n  dayCount+=daysInYear(i);\r\n}for(let i=dayOfYear;i<m;i++){\r\n  dayCount+=dayOfYear(y,i,d);}\r\n} else{\r\n  for(let i=y;i<baseYear;i++){\r\n    dayCount-=daysInYear(i)\r\n  }\r\n}\r\n\r\nfor(let i=baseMonth;i<m;i++){\r\n  dayCount+=daysInMonth(y,i);\r\n}\r\ndayCount+=(d-baseDay);\r\nreturn(baseDayWeek+dayCount%7+7)%7\r\n\r\n}\r\n\r\nfunction dayOfWeekAsString(dow){\r\n  const a = [\"日\", \"月\", \"火\", \"水\", \"木\", \"金\", \"土\", \"日\"];\r\n  return a[dow];\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/21/2024, 3:17:15 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n}\r\n\r\nfunction draw(){\r\n  background(0, 0, 0);\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/22/2024, 5:43:23 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/22/2024, 7:10:28 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\n// 最終課題を制作しよう\r\n\r\nlet balloons;\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons=[];\r\n}\r\n\r\nfunction draw(){\r\n  if(frameCount%7==1){\r\n  const b={\r\n    x:random(0,width),\r\n    y:random(0,height),\r\n    vx:random(-2,2),\r\n    vy:random(-5,0)\r\n  };\r\n  balloons.push(b);\r\n  }\r\n  \r\n  background(160, 192, 255);\r\n  for(let i=0;i<balloons.length;i++){\r\n    let b =balloons[i];\r\n    fill('red');\r\n    bezier(b.x,b.y,b.x-60,b.y-60,b.x+60,b.y-60,b.x,b.y);\r\n    line(b.x,b.y,b.x,b.y+35);\r\n    b.x+=b.vx;\r\n    b.y+=b.vy;\r\n    \r\n   if(b.x < 0 || b.x > width){ b.vx = -1* b.vx; }\r\n   \r\n   b.x = constrain(b.x, 0+60, width-60);\r\n   b.y = constrain(b.y, 0+60, height);\r\n  \r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/22/2024, 9:38:20 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nlet balloons;\r\nlet mb,my;\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons=[];\r\n}\r\n\r\nfunction draw(){\r\n  if(frameCount%7==1){\r\n  const b={\r\n    x:random(0,width),\r\n    y:height,\r\n    vx:random(-2,2),\r\n    vy:random(-2,-1)\r\n  };\r\n  balloons.push(b);\r\n  }\r\n  \r\n  background(160, 192, 255);\r\n  for(let i=0;i<balloons.length;i++){\r\n    let b =balloons[i];\r\n    \r\n    fill('red');\r\n    bezier(b.x,b.y,b.x-60,b.y-60,b.x+60,b.y-60,b.x,b.y);\r\n    line(b.x,b.y,b.x,b.y+25);\r\n    noFill();\r\n    ellipse(b.x,b.y-20,50);\r\n    \r\n    b.x+=b.vx;\r\n    b.y+=b.vy;\r\n    \r\n   if(b.x < 0 || b.x > width){ b.vy = -5* b.vy; }\r\n   \r\n   b.x = constrain(b.x, 0+60, width-60);\r\n   b.y = constrain(b.y, 0+60, height);\r\n  \r\n  }\r\n}\r\n\r\nfunction locationUpdate(){\r\n  \r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/22/2024, 10:57:13 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nlet balloons;\r\nlet mb,my;\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons=[];\r\n}\r\n\r\nfunction draw(){\r\n  CreateBalloons();\r\n  \r\n  background(160, 192, 255);\r\n  for(let i=0;i<balloons.length;i++){\r\n    let b =balloons[i];\r\n    \r\n    fill('red');\r\n    bezier(b.x,b.y,b.x-60,b.y-60,b.x+60,b.y-60,b.x,b.y);\r\n    line(b.x,b.y,b.x,b.y+25);\r\n    noFill();\r\n    ellipse(b.x,b.y-20,50);\r\n    \r\n    b.x+=b.vx;\r\n    b.y+=b.vy;\r\n    \r\n   if(b.x < 0 || b.x > width){ b.vy = -5* b.vy; }\r\n   \r\n   b.x = constrain(b.x, 0+60, width-60);\r\n   b.y = constrain(b.y, 0+60, height);\r\n  \r\n  }\r\n}\r\n\r\nfunction CreateBalloons(){\r\n  if(frameCount%7==1){\r\n    const b={\r\n      x:random(0,width),\r\n      y:height,\r\n      vx:random(-2,2),\r\n      vy:random(-2,-1)\r\n    };\r\n    balloons.push(b);\r\n    }\r\n  \r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/22/2024, 10:58:24 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nlet balloons;\r\nlet mb,my;\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons=[];\r\n}\r\n\r\nfunction draw(){\r\n  CreateBalloons();\r\n  \r\n  background(160, 192, 255);\r\n  for(let i=0;i<balloons.length;i++){\r\n    let b =balloons[i];\r\n    \r\n    fill('red');\r\n    bezier(b.x,b.y,b.x-60,b.y-60,b.x+60,b.y-60,b.x,b.y);\r\n    line(b.x,b.y,b.x,b.y+25);\r\n    noFill();\r\n    ellipse(b.x,b.y-20,50);\r\n    \r\n    b.x+=b.vx;\r\n    b.y+=b.vy;\r\n\r\n    for(let j=0;j<balloons.length;j++)\r\n      if(i!==j){\r\n        let c=balloons[j];\r\n        let mid=dist(b.x,b.y-20,c.x,c.y-20);\r\n        if(mid<100){\r\n          if (mid< 100) { // 重なり判定\r\n          let angle = atan2(c.y - b.y, c.x - b.x);\r\n          let overlap = 100 - mid; // 重なりの度合い\r\n\r\n          // 重なりを解消\r\n          b.x -= cos(angle) * overlap / 2;\r\n          b.y -= sin(angle) * overlap / 2;\r\n          c.x += cos(angle) * overlap / 2;\r\n          c.y += sin(angle) * overlap / 2;\r\n          \r\n        }\r\n      }\r\n      }\r\n    \r\n   if(b.x < 0 || b.x > width){ b.vx = - b.vx; }\r\n   \r\n   b.x = constrain(b.x, 0+60, width-60);\r\n   b.y = constrain(b.y, 0+60, height);\r\n  \r\n  }\r\n}\r\n\r\nfunction CreateBalloons(){\r\n  if(frameCount%7==1){\r\n    const b={\r\n      x:random(0,width),\r\n      y:height,\r\n      vx:random(-2,2),\r\n      vy:random(-2,-1)\r\n    };\r\n    balloons.push(b);\r\n    }\r\n  \r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/22/2024, 10:58:44 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nlet balloons;\r\nlet mb,my;\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons=[];\r\n}\r\n\r\nfunction draw(){\r\n  CreateBalloons();\r\n  \r\n  background(160, 192, 255);\r\n  for(let i=0;i<balloons.length;i++){\r\n    let b =balloons[i];\r\n    \r\n    fill('red');\r\n    bezier(b.x,b.y,b.x-60,b.y-60,b.x+60,b.y-60,b.x,b.y);\r\n    line(b.x,b.y,b.x,b.y+25);\r\n    noFill();\r\n    ellipse(b.x,b.y-20,50);\r\n    \r\n    b.x+=b.vx;\r\n    b.y+=b.vy;\r\n\r\n    for(let j=0;j<balloons.length;j++)\r\n      if(i!==j){\r\n        let c=balloons[j];\r\n        let mid=dist(b.x,b.y-20,c.x,c.y-20);\r\n        if(mid<100){\r\n          if (mid< 100) { // 重なり判定\r\n          let angle = atan2(c.y - b.y, c.x - b.x);\r\n          let overlap = 100 - mid; // 重なりの度合い\r\n\r\n          // 重なりを解消\r\n          b.x -= cos(angle) * overlap / 2;\r\n          b.y -= sin(angle) * overlap / 2;\r\n          c.x += cos(angle) * overlap / 2;\r\n          c.y += sin(angle) * overlap / 2;\r\n          \r\n        }\r\n      }\r\n      }\r\n    \r\n   if(b.x < 0 || b.x > width){ b.vx = - b.vx; }\r\n   \r\n   b.x = constrain(b.x, 0+60, width-60);\r\n   b.y = constrain(b.y, 0+60, height);\r\n  \r\n  }\r\n}\r\n\r\nfunction CreateBalloons(){\r\n  if(frameCount%7==1){\r\n    const b={\r\n      x:random(0,width),\r\n      y:height,\r\n      vx:random(-2,2),\r\n      vy:random(-2,-1)\r\n    };\r\n    balloons.push(b);\r\n    }\r\n  \r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/22/2024, 11:01:10 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nlet balloons;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons=[];\r\n}\r\n\r\nfunction draw(){\r\n  CreateBalloons();\r\n  \r\n  background(160, 192, 255);\r\n  for(let i=0;i<balloons.length;i++){\r\n    let b =balloons[i];\r\n    \r\n    fill('red');\r\n    bezier(b.x,b.y,b.x-60,b.y-60,b.x+60,b.y-60,b.x,b.y);\r\n    line(b.x,b.y,b.x,b.y+25);\r\n    noFill();\r\n    ellipse(b.x,b.y-20,50);\r\n    \r\n    b.x+=b.vx;\r\n    b.y+=b.vy;\r\n\r\n    for(let j=0;j<balloons.length;j++)\r\n      if(i!==j){\r\n        let c=balloons[j];\r\n        let mid=dist(b.x,b.y-20,c.x,c.y-20);\r\n        if(mid<100){\r\n          if (mid< 100) { // 重なり判定\r\n          let angle = atan2(c.y - b.y, c.x - b.x);\r\n          let overlap = 100 - mid; // 重なりの度合い\r\n\r\n          // 重なりを解消\r\n          b.x -= cos(angle) * overlap / 2;\r\n          b.y -= sin(angle) * overlap / 2;\r\n          c.x += cos(angle) * overlap / 2;\r\n          c.y += sin(angle) * overlap / 2;\r\n          \r\n        }\r\n      }\r\n      }\r\n    \r\n   if(b.x < 0 || b.x > width){ b.vx = - b.vx; }\r\n   \r\n   b.x = constrain(b.x, 0+60, width-60);\r\n   b.y = constrain(b.y, 0+60, height);\r\n  \r\n  }\r\n}\r\n\r\nfunction CreateBalloons(){\r\n  if(frameCount%7==1){\r\n    const b={\r\n      x:random(0,width),\r\n      y:height,\r\n      vx:random(-2,2),\r\n      vy:random(-2,-1)\r\n    };\r\n    balloons.push(b);\r\n    }\r\n  \r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/22/2024, 11:02:05 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nlet balloons;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons=[];\r\n}\r\n\r\nfunction draw(){\r\n  CreateBalloons();\r\n  \r\n  background(160, 192, 255);\r\n  for(let i=0;i<balloons.length;i++){\r\n    let b =balloons[i];\r\n    \r\n    fill('red');\r\n    bezier(b.x,b.y,b.x-60,b.y-60,b.x+60,b.y-60,b.x,b.y);\r\n    line(b.x,b.y,b.x,b.y+25);\r\n    noFill();\r\n    ellipse(b.x,b.y-20,50);\r\n    \r\n    b.x+=b.vx;\r\n    b.y+=b.vy;\r\n\r\n    for(let j=0;j<balloons.length;j++)\r\n      if(i!==j){\r\n        let c=balloons[j];\r\n        let mid=dist(b.x,b.y-20,c.x,c.y-20);\r\n        if(mid<100){\r\n           // 重なり判定\r\n          let angle = atan2(c.y - b.y, c.x - b.x);\r\n          let overlap = 100 - mid; // 重なりの度合い\r\n\r\n          // 重なりを解消\r\n          b.x -= cos(angle) * overlap / 2;\r\n          b.y -= sin(angle) * overlap / 2;\r\n          c.x += cos(angle) * overlap / 2;\r\n          c.y += sin(angle) * overlap / 2;\r\n          \r\n        \r\n      }\r\n      }\r\n    \r\n   if(b.x < 0 || b.x > width){ b.vx = - b.vx; }\r\n   \r\n   b.x = constrain(b.x, 0+60, width-60);\r\n   b.y = constrain(b.y, 0+60, height);\r\n  \r\n  }\r\n}\r\n\r\nfunction CreateBalloons(){\r\n  if(frameCount%7==1){\r\n    const b={\r\n      x:random(0,width),\r\n      y:height,\r\n      vx:random(-2,2),\r\n      vy:random(-2,-1)\r\n    };\r\n    balloons.push(b);\r\n    }\r\n  \r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/22/2024, 11:02:37 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nlet balloons;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons=[];\r\n}\r\n\r\nfunction draw(){\r\n  CreateBalloon();\r\n  \r\n  background(160, 192, 255);\r\n  for(let i=0;i<balloons.length;i++){\r\n    let b =balloons[i];\r\n    \r\n    fill('red');\r\n    bezier(b.x,b.y,b.x-60,b.y-60,b.x+60,b.y-60,b.x,b.y);\r\n    line(b.x,b.y,b.x,b.y+25);\r\n    noFill();\r\n    ellipse(b.x,b.y-20,50);\r\n    \r\n    b.x+=b.vx;\r\n    b.y+=b.vy;\r\n\r\n    for(let j=0;j<balloons.length;j++)\r\n      if(i!==j){\r\n        let c=balloons[j];\r\n        let mid=dist(b.x,b.y-20,c.x,c.y-20);\r\n        if(mid<100){\r\n           // 重なり判定\r\n          let angle = atan2(c.y - b.y, c.x - b.x);\r\n          let overlap = 100 - mid; // 重なりの度合い\r\n\r\n          // 重なりを解消\r\n          b.x -= cos(angle) * overlap / 2;\r\n          b.y -= sin(angle) * overlap / 2;\r\n          c.x += cos(angle) * overlap / 2;\r\n          c.y += sin(angle) * overlap / 2;\r\n          \r\n        \r\n      }\r\n      }\r\n    \r\n   if(b.x < 0 || b.x > width){ b.vx = - b.vx; }\r\n   \r\n   b.x = constrain(b.x, 0+60, width-60);\r\n   b.y = constrain(b.y, 0+60, height);\r\n  \r\n  }\r\n}\r\n\r\nfunction CreateBalloon(){\r\n  if(frameCount%7==1){\r\n    const b={\r\n      x:random(0,width),\r\n      y:height,\r\n      vx:random(-2,2),\r\n      vy:random(-2,-1)\r\n    };\r\n    balloons.push(b);\r\n    }\r\n  \r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/22/2024, 11:02:56 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nlet balloons;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons=[];\r\n}\r\n\r\nfunction draw(){\r\n  CreateBalloon();\r\n  \r\n  background(160, 192, 255);\r\n  for(let i=0;i<balloons.length;i++){\r\n    let b =balloons[i];\r\n    \r\n    fill('red');\r\n    bezier(b.x,b.y,b.x-60,b.y-60,b.x+60,b.y-60,b.x,b.y);\r\n    line(b.x,b.y,b.x,b.y+25);\r\n    noFill();\r\n    ellipse(b.x,b.y-20,50);\r\n    \r\n    b.x+=b.vx;\r\n    b.y+=b.vy;\r\n\r\n    for(let j=0;j<balloons.length;j++)\r\n      if(i!==j){\r\n        let c=balloons[j];\r\n        let mid=dist(b.x,b.y-20,c.x,c.y-20);\r\n        if(mid<100){\r\n           // 重なり判定\r\n          let angle = atan2(c.y - b.y, c.x - b.x);\r\n          let overlap = 100 - mid; // 重なりの度合い\r\n\r\n          // 重なりを解消\r\n          b.x -= cos(angle) * overlap / 2;\r\n          b.y -= sin(angle) * overlap / 2;\r\n          c.x += cos(angle) * overlap / 2;\r\n          c.y += sin(angle) * overlap / 2;\r\n          \r\n        \r\n      }\r\n      }\r\n    \r\n   if(b.x < 0 || b.x > width){ b.vx = - b.vx; }\r\n   \r\n   b.x = constrain(b.x, 0+60, width-60);\r\n   b.y = constrain(b.y, 0+60, height);\r\n  \r\n  }\r\n}\r\n\r\nfunction CreateBalloon(){\r\n  if(frameCount%7==1){\r\n    const b={\r\n      x:random(0,width),\r\n      y:height,\r\n      vx:random(-2,2),\r\n      vy:random(-2,-1)\r\n    };\r\n    balloons.push(b);\r\n    }\r\n  \r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/22/2024, 11:03:29 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nlet balloons;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons=[];\r\n}\r\n\r\nfunction draw(){\r\n CreateBalloon();\r\n  \r\n  background(160, 192, 255);\r\n  for(let i=0;i<balloons.length;i++){\r\n    let b =balloons[i];\r\n    \r\n    fill('red');\r\n    bezier(b.x,b.y,b.x-60,b.y-60,b.x+60,b.y-60,b.x,b.y);\r\n    line(b.x,b.y,b.x,b.y+25);\r\n    noFill();\r\n    ellipse(b.x,b.y-20,50);\r\n    \r\n    b.x+=b.vx;\r\n    b.y+=b.vy;\r\n    \r\n    for(let j=0;j<balloons.length;j++)\r\n      if(i!==j){\r\n        let c=balloons[j];\r\n        let mid=dist(b.x,b.y-20,c.x,c.y-20);\r\n        if(mid<100){\r\n          if (mid< 100) { // 重なり判定\r\n          let angle = atan2(c.y - b.y, c.x - b.x);\r\n          let overlap = 100 - mid; // 重なりの度合い\r\n\r\n          // 重なりを解消\r\n          b.x -= cos(angle) * overlap / 2;\r\n          b.y -= sin(angle) * overlap / 2;\r\n          c.x += cos(angle) * overlap / 2;\r\n          c.y += sin(angle) * overlap / 2;\r\n          \r\n        }\r\n      }\r\n      }\r\n    \r\n    if (b.x < 0 || b.x > width) {\r\n    b.vx = -b.vx;\r\n    }\r\n   \r\n   b.x = constrain(b.x, 0+60, width-60);\r\n   b.y = constrain(b.y, 0+60, height);\r\n  \r\n  }\r\n}\r\n\r\nfunction CreateBalloon(){\r\n    if(frameCount%7==1){\r\n    const b={\r\n    x:random(0,width),\r\n    y:height,\r\n    vx:random(-2,2),\r\n    vy:random(-2,-1)\r\n  };\r\n  balloons.push(b);\r\n  }\r\n  \r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/22/2024, 11:04:10 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nlet balloons;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons=[];\r\n}\r\n\r\nfunction draw(){\r\n CreateBalloon();\r\n  \r\n  background(160, 192, 255);\r\n  for(let i=0;i<balloons.length;i++){\r\n    let b =balloons[i];\r\n    \r\n    fill('red');\r\n    bezier(b.x,b.y,b.x-60,b.y-60,b.x+60,b.y-60,b.x,b.y);\r\n    line(b.x,b.y,b.x,b.y+25);\r\n    noFill();\r\n    ellipse(b.x,b.y-20,50);\r\n    \r\n    b.x+=b.vx;\r\n    b.y+=b.vy;\r\n    \r\n    for(let j=0;j<balloons.length;j++)\r\n      if(i!==j){\r\n        let c=balloons[j];\r\n        let mid=dist(b.x,b.y-20,c.x,c.y-20);\r\n        if(mid<100){\r\n          if (mid< 100) { // 重なり判定\r\n          let angle = atan2(c.y - b.y, c.x - b.x);\r\n          let overlap = 100 - mid; // 重なりの度合い\r\n\r\n          // 重なりを解消\r\n          b.x -= cos(angle) * overlap / 2;\r\n          b.y -= sin(angle) * overlap / 2;\r\n          c.x += cos(angle) * overlap / 2;\r\n          c.y += sin(angle) * overlap / 2;\r\n          \r\n        }\r\n      }\r\n      }\r\n    \r\n    if (b.x < 0 || b.x > width) {\r\n    b.vx = -b.vx;\r\n    }\r\n   \r\n   b.x = constrain(b.x, 0+60, width-60);\r\n   b.y = constrain(b.y, 0+60, height);\r\n  \r\n  }\r\n}\r\n\r\nfunction CreateBalloon(){\r\n    if(frameCount%7==1){\r\n    const b={\r\n    x:random(0,width),\r\n    y:height,\r\n    vx:random(-2,2),\r\n    vy:random(-2,-1)\r\n  };\r\n  balloons.push(b);\r\n  }\r\n  \r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/22/2024, 11:05:55 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nlet balloons;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons=[];\r\n}\r\n\r\nfunction draw(){\r\n CreateBalloon();\r\n  \r\n  background(160, 192, 255);\r\n  for(let i=0;i<balloons.length;i++){\r\n    let b =balloons[i];\r\n    \r\n    fill('red');\r\n    bezier(b.x,b.y,b.x-60,b.y-60,b.x+60,b.y-60,b.x,b.y);\r\n    line(b.x,b.y,b.x,b.y+25);\r\n    noFill();\r\n    ellipse(b.x,b.y-20,50);\r\n    \r\n    b.x+=b.vx;\r\n    b.y+=b.vy;\r\n    \r\n    for(let j=0;j<balloons.length;j++)\r\n      if(i!==j){\r\n        let c=balloons[j];\r\n        let mid=dist(b.x,b.y-20,c.x,c.y-20);\r\n        if(mid<100){\r\n          if (mid< 100) { // 重なり判定\r\n          let angle = atan2(c.y - b.y, c.x - b.x);\r\n          let overlap = 100 - mid; // 重なりの度合い\r\n\r\n          // 重なりを解消\r\n          b.x -= cos(angle) * overlap / 2;\r\n          b.y -= sin(angle) * overlap / 2;\r\n          c.x += cos(angle) * overlap / 2;\r\n          c.y += sin(angle) * overlap / 2;\r\n          \r\n        }\r\n      }\r\n      }\r\n    \r\n    if (b.x < 0 || b.x > width) {\r\n    b.vx = -b.vx;\r\n    }\r\n   \r\n   b.x = constrain(b.x, 0+60, width-60);\r\n   b.y = constrain(b.y, 0+60, height);\r\n  \r\n  }\r\n}\r\n\r\nfunction CreateBalloon(){\r\n    if(frameCount%7==1){\r\n    const b={\r\n    x:random(0,width),\r\n    y:height,\r\n    vx:random(-2,2),\r\n    vy:random(-2,-1)\r\n  };\r\n  balloons.push(b);\r\n  }\r\n  \r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/22/2024, 11:06:58 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nlet balloons;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons=[];\r\n}\r\n\r\nfunction draw(){\r\n CreateBalloon();\r\n  \r\n  background(160, 192, 255);\r\n  for(let i=0;i<balloons.length;i++){\r\n    let b =balloons[i];\r\n    \r\n    fill('red');\r\n    bezier(b.x,b.y,b.x-60,b.y-60,b.x+60,b.y-60,b.x,b.y);\r\n    line(b.x,b.y,b.x,b.y+25);\r\n    noFill();\r\n    ellipse(b.x,b.y-20,50);\r\n    \r\n    b.x+=b.vx;\r\n    b.y+=b.vy;\r\n    \r\n    for(let j=0;j<balloons.length;j++)\r\n      if(i!==j){\r\n        let c=balloons[j];\r\n        let mid=dist(b.x,b.y-20,c.x,c.y-20);\r\n        if(mid<100){\r\n          if (mid< 100) { // 重なり判定\r\n          let angle = atan2(c.y - b.y, c.x - b.x);\r\n          let overlap = 100 - mid; // 重なりの度合い\r\n\r\n          // 重なりを解消\r\n          b.x -= cos(angle) * overlap / 2;\r\n          b.y -= sin(angle) * overlap / 2;\r\n          c.x += cos(angle) * overlap / 2;\r\n          c.y += sin(angle) * overlap / 2;\r\n          \r\n        }\r\n      }\r\n      }\r\n    \r\n    if (b.x < 0 || b.x > width) {\r\n    b.vx = -b.vx;\r\n    }\r\n   \r\n   b.x = constrain(b.x, 0+60, width-60);\r\n   b.y = constrain(b.y, 0+60, height);\r\n  \r\n  }\r\n}\r\n\r\nfunction CreateBalloon(){\r\n    if(frameCount%7==1){\r\n    const b={\r\n    x:random(0,width),\r\n    y:height,\r\n    vx:random(-2,2),\r\n    vy:random(-2,-1)\r\n  };\r\n  balloons.push(b);\r\n  }\r\n  \r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/22/2024, 11:10:05 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\nballs = [];\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n}\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = { x: mouseX, y: mouseY, size, vx: dx, vy: dy };\r\n    balls.push(b);\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/22/2024, 11:12:41 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nlet balloons;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons=[];\r\n}\r\n\r\nfunction draw(){\r\n CreateBalloon();\r\n  \r\n  background(160, 192, 255);\r\n  for(let i=0;i<balloons.length;i++){\r\n    let b =balloons[i];\r\n    \r\n    fill('red');\r\n    bezier(b.x,b.y,b.x-60,b.y-60,b.x+60,b.y-60,b.x,b.y);\r\n    line(b.x,b.y,b.x,b.y+25);\r\n    noFill();\r\n    noStroke();\r\n    ellipse(b.x,b.y-20,50);\r\n    \r\n    b.x+=b.vx;\r\n    b.y+=b.vy;\r\n    \r\n    for(let j=0;j<balloons.length;j++)\r\n      if(i!==j){\r\n        let c=balloons[j];\r\n        let mid=dist(b.x,b.y-20,c.x,c.y-20);\r\n        if(mid<100){\r\n          if (mid< 100) { // 重なり判定\r\n          let angle = atan2(c.y - b.y, c.x - b.x);\r\n          let overlap = 100 - mid; // 重なりの度合い\r\n\r\n          // 重なりを解消\r\n          b.x -= cos(angle) * overlap / 2;\r\n          b.y -= sin(angle) * overlap / 2;\r\n          c.x += cos(angle) * overlap / 2;\r\n          c.y += sin(angle) * overlap / 2;\r\n          \r\n        }\r\n      }\r\n      }\r\n    \r\n    if (b.x < 0 || b.x > width) {\r\n    b.vx = -b.vx;\r\n    }\r\n   \r\n   b.x = constrain(b.x, 0+60, width-60);\r\n   b.y = constrain(b.y, 0+60, height);\r\n  \r\n  }\r\n}\r\n\r\nfunction CreateBalloon(){\r\n    if(frameCount%7==1){\r\n    const b={\r\n    x:random(0,width),\r\n    y:height,\r\n    vx:random(-2,2),\r\n    vy:random(-2,-1)\r\n  };\r\n  balloons.push(b);\r\n  }\r\n  \r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/23/2024, 8:47:08 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "let balloons;\r\n\r\nfunction setup() {\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons = [];\r\n}\r\n\r\nfunction draw() {\r\n  background(160, 192, 255);\r\n  \r\n  const newBalloon = CreateBalloon();\r\n  if (newBalloon) {\r\n    let attempts = 0;\r\n    while (Overlap(newBalloon) && attempts < 10) {\r\n      newBalloon.x = random(0, width);\r\n      newBalloon.y = height;\r\n      attempts++;\r\n    }\r\n    if (!Overlap(newBalloon)) {\r\n      balloons.push(newBalloon);\r\n    }\r\n  }\r\n\r\n  for (let i = 0; i < balloons.length; i++) {\r\n    let b = balloons[i];\r\n    fill('red');\r\n    bezier(b.x, b.y, b.x - 60, b.y - 60, b.x + 60, b.y - 60, b.x, b.y);\r\n    line(b.x, b.y, b.x, b.y + 25);\r\n    noFill();\r\n    ellipse(b.x,b.y-20,50);\r\n\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n\r\n    for (let j = 0; j < balloons.length; j++) {\r\n      if (i !== j) {\r\n        let c = balloons[j];\r\n        let mid = dist(b.x, b.y - 20, c.x, c.y - 20);\r\n        if (mid < 100) {\r\n          let angle = atan2(c.y - b.y, c.x - b.x);\r\n          let overlap = 100 - mid;\r\n\r\n          b.x -= cos(angle) * overlap / 2;\r\n          b.y -= sin(angle) * overlap / 2;\r\n          c.x += cos(angle) * overlap / 2;\r\n          c.y += sin(angle) * overlap / 2;\r\n        }\r\n      }\r\n    }\r\n\r\n    if (b.x < 0 || b.x > width) {\r\n      b.vx = -b.vx;\r\n    }\r\n\r\n    b.x = constrain(b.x, 60, width - 60);\r\n    b.y = constrain(b.y, 60, height);\r\n  }\r\n}\r\n\r\nfunction CreateBalloon() {\r\n  if (frameCount % 7 === 1) {\r\n    return {\r\n      x: random(0, width),\r\n      y: height,\r\n      vx: random(-2, 2),\r\n      vy: random(-2, -1)\r\n    };\r\n  }\r\n  \r\n}\r\n\r\nfunction Overlap(newBalloon) {\r\n  for (let i = 0; i < balloons.length; i++) {\r\n    let b = balloons[i];\r\n    let mid = dist(newBalloon.x, newBalloon.y - 20, b.x, b.y - 20);\r\n    if (mid < 100) {\r\n      return true;\r\n    }\r\n  }\r\n  return false;\r\n}\r\n\r\nfunction mouseClicked(){\r\n  for (let i = 0; i < balloons.length; i++) {\r\n    let b = balloons[i];\r\n      if((mouseX>b.x-35&&mouseX<b.x+35)&&(mouseY>b.y-55&&mouseY<b.y+15)){\r\n        balloons.splice(i,1);\r\n         }\r\n   }\r\n}\r\n\r\nfunction windowResized() {\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/23/2024, 8:47:45 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "let balloons;\r\n\r\nfunction setup() {\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons = [];\r\n}\r\n\r\nfunction draw() {\r\n  background(160, 192, 255);\r\n  \r\n  const newBalloon = CreateBalloon();\r\n  if (newBalloon) {\r\n    let attempts = 0;\r\n    while (Overlap(newBalloon) && attempts < 10) {\r\n      newBalloon.x = random(0, width);\r\n      newBalloon.y = height;\r\n      attempts++;\r\n    }\r\n    if (!Overlap(newBalloon)) {\r\n      balloons.push(newBalloon);\r\n    }\r\n  }\r\n\r\n  for (let i = 0; i < balloons.length; i++) {\r\n    let b = balloons[i];\r\n    fill('red');\r\n    bezier(b.x, b.y, b.x - 60, b.y - 60, b.x + 60, b.y - 60, b.x, b.y);\r\n    line(b.x, b.y, b.x, b.y + 25);\r\n    noFill();\r\n    //ellipse(b.x,b.y-20,50);\r\n\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n\r\n    for (let j = 0; j < balloons.length; j++) {\r\n      if (i !== j) {\r\n        let c = balloons[j];\r\n        let mid = dist(b.x, b.y - 20, c.x, c.y - 20);\r\n        if (mid < 100) {\r\n          let angle = atan2(c.y - b.y, c.x - b.x);\r\n          let overlap = 100 - mid;\r\n\r\n          b.x -= cos(angle) * overlap / 2;\r\n          b.y -= sin(angle) * overlap / 2;\r\n          c.x += cos(angle) * overlap / 2;\r\n          c.y += sin(angle) * overlap / 2;\r\n        }\r\n      }\r\n    }\r\n\r\n    if (b.x < 0 || b.x > width) {\r\n      b.vx = -b.vx;\r\n    }\r\n\r\n    b.x = constrain(b.x, 60, width - 60);\r\n    b.y = constrain(b.y, 60, height);\r\n  }\r\n}\r\n\r\nfunction CreateBalloon() {\r\n  if (frameCount % 7 === 1) {\r\n    return {\r\n      x: random(0, width),\r\n      y: height,\r\n      vx: random(-2, 2),\r\n      vy: random(-2, -1)\r\n    };\r\n  }\r\n  \r\n}\r\n\r\nfunction Overlap(newBalloon) {\r\n  for (let i = 0; i < balloons.length; i++) {\r\n    let b = balloons[i];\r\n    let mid = dist(newBalloon.x, newBalloon.y - 20, b.x, b.y - 20);\r\n    if (mid < 100) {\r\n      return true;\r\n    }\r\n  }\r\n  return false;\r\n}\r\n\r\nfunction mouseClicked(){\r\n  for (let i = 0; i < balloons.length; i++) {\r\n    let b = balloons[i];\r\n      if((mouseX>b.x-35&&mouseX<b.x+35)&&(mouseY>b.y-55&&mouseY<b.y+15)){\r\n        balloons.splice(i,1);\r\n         }\r\n   }\r\n}\r\n\r\nfunction windowResized() {\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/24/2024, 9:23:22 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "let balloons;\r\n\r\nfunction setup() {\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons = [];\r\n}\r\n\r\nfunction draw() {\r\n  background(160, 192, 255);\r\n  \r\n  const newBalloon = CreateBalloon();\r\n  if (newBalloon) {\r\n    let attempts = 0;\r\n    while (Overlap(newBalloon) && attempts < 10) {\r\n      newBalloon.x = random(0, width);\r\n      newBalloon.y = height;\r\n      attempts++;\r\n    }\r\n    if (!Overlap(newBalloon)) {\r\n      balloons.push(newBalloon);\r\n    }\r\n  }\r\n\r\n  for (let i = 0; i < balloons.length; i++) {\r\n    let b = balloons[i];\r\n    fill('yellow');\r\n    bezier(b.x, b.y, b.x - 60, b.y - 60, b.x + 60, b.y - 60, b.x, b.y);\r\n    line(b.x, b.y, b.x, b.y + 25);\r\n    noFill();\r\n    //ellipse(b.x,b.y-20,50);\r\n\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n\r\n    for (let j = 0; j < balloons.length; j++) {\r\n      if (i !== j) {\r\n        let c = balloons[j];\r\n        let mid = dist(b.x, b.y - 20, c.x, c.y - 20);\r\n        if (mid < 100) {\r\n          let angle = atan2(c.y - b.y, c.x - b.x);\r\n          let overlap = 100 - mid;\r\n\r\n          b.x -= cos(angle) * overlap / 2;\r\n          b.y -= sin(angle) * overlap / 2;\r\n          c.x += cos(angle) * overlap / 2;\r\n          c.y += sin(angle) * overlap / 2;\r\n        }\r\n      }\r\n    }\r\n\r\n    if (b.x < 0 || b.x > width) {\r\n      b.vx = -b.vx;\r\n    }\r\n\r\n    b.x = constrain(b.x, 60, width - 60);\r\n    b.y = constrain(b.y, 60, height);\r\n  }\r\n}\r\n\r\nfunction CreateBalloon() {\r\n  if (frameCount % 7 === 1) {\r\n    return {\r\n      x: random(0, width),\r\n      y: height,\r\n      vx: random(-2, 2),\r\n      vy: random(-2, -1)\r\n    };\r\n  }\r\n  \r\n}\r\n\r\nfunction Overlap(newBalloon) {\r\n  for (let i = 0; i < balloons.length; i++) {\r\n    let b = balloons[i];\r\n    let mid = dist(newBalloon.x, newBalloon.y - 20, b.x, b.y - 20);\r\n    if (mid < 100) {\r\n      return true;\r\n    }\r\n  }\r\n  return false;\r\n}\r\n\r\nfunction mouseClicked(){\r\n  for (let i = 0; i < balloons.length; i++) {\r\n    let b = balloons[i];\r\n      if((mouseX>b.x-35&&mouseX<b.x+35)&&(mouseY>b.y-55&&mouseY<b.y+15)){\r\n        balloons.splice(i,1);\r\n         }\r\n   }\r\n}\r\n\r\nfunction windowResized() {\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
     }
   ]
 }

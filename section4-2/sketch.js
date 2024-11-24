@@ -6,7 +6,7 @@ let balls;
 
 function setup(){
   createCanvas(windowWidth, windowHeight);
-  balls = [];
+balls = [];
 }
 
 function draw(){
