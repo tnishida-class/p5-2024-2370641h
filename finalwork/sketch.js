@@ -1,8 +1,10 @@
 let balloons;
+let circle;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   balloons = [];
+  circle=[];
 }
 
 function draw() {
@@ -20,6 +22,23 @@ function draw() {
       balloons.push(newBalloon);
     }
   }
+ 
+    if(mouseIsPressed){
+       for (let i = 0; i < balloons.length; i++) {
+    let b = balloons[i];
+      if((mouseX>b.x-35&&mouseX<b.x+35)&&(mouseY>b.y-55&&mouseY<b.y+15)){
+        balloons.splice(i,1); 
+        for(let i = 0; i < 16; i++){
+          let s =50;
+          let angle = TWO_PI * i / 16;
+          let x = b.x+ cos(angle) * s;
+          let y = b.y-20 + sin(angle) * s;
+          fill("red");
+           ellipse(x, y, 5);
+         }
+       }
+    }
+    }
 
   for (let i = 0; i < balloons.length; i++) {
     let b = balloons[i];
@@ -32,6 +51,8 @@ function draw() {
     b.x += b.vx;
     b.y += b.vy;
 
+  
+      
     for (let j = 0; j < balloons.length; j++) {
       if (i !== j) {
         let c = balloons[j];
@@ -57,6 +78,7 @@ function draw() {
   }
 }
 
+
 function CreateBalloon() {
   if (frameCount % 7 === 1) {
     return {
@@ -80,14 +102,7 @@ function Overlap(newBalloon) {
   return false;
 }
 
-function mouseClicked(){
-  for (let i = 0; i < balloons.length; i++) {
-    let b = balloons[i];
-      if((mouseX>b.x-35&&mouseX<b.x+35)&&(mouseY>b.y-55&&mouseY<b.y+15)){
-        balloons.splice(i,1);
-         }
-   }
-}
+
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);

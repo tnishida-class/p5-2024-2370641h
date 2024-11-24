@@ -4079,6 +4079,36 @@
           ]
         }
       }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/24/2024, 9:46:37 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "let balloons;\r\n\r\nfunction setup() {\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons = [];\r\n}\r\n\r\nfunction draw() {\r\n  background(160, 192, 255);\r\n  \r\n  const newBalloon = CreateBalloon();\r\n  if (newBalloon) {\r\n    let attempts = 0;\r\n    while (Overlap(newBalloon) && attempts < 10) {\r\n      newBalloon.x = random(0, width);\r\n      newBalloon.y = height;\r\n      attempts++;\r\n    }\r\n    if (!Overlap(newBalloon)) {\r\n      balloons.push(newBalloon);\r\n    }\r\n  }\r\n\r\n  for (let i = 0; i < balloons.length; i++) {\r\n    let b = balloons[i];\r\n    fill('yellow');\r\n    bezier(b.x, b.y, b.x - 60, b.y - 60, b.x + 60, b.y - 60, b.x, b.y);\r\n    line(b.x, b.y, b.x, b.y + 25);\r\n    noFill();\r\n    //ellipse(b.x,b.y-20,50);\r\n\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n\r\n    for (let j = 0; j < balloons.length; j++) {\r\n      if (i !== j) {\r\n        let c = balloons[j];\r\n        let mid = dist(b.x, b.y - 20, c.x, c.y - 20);\r\n        if (mid < 100) {\r\n          let angle = atan2(c.y - b.y, c.x - b.x);\r\n          let overlap = 100 - mid;\r\n\r\n          b.x -= cos(angle) * overlap / 2;\r\n          b.y -= sin(angle) * overlap / 2;\r\n          c.x += cos(angle) * overlap / 2;\r\n          c.y += sin(angle) * overlap / 2;\r\n        }\r\n      }\r\n    }\r\n\r\n    if (b.x < 0 || b.x > width) {\r\n      b.vx = -b.vx;\r\n    }\r\n\r\n    b.x = constrain(b.x, 60, width - 60);\r\n    b.y = constrain(b.y, 60, height);\r\n  }\r\n}\r\n\r\nfunction CreateBalloon() {\r\n  if (frameCount % 7 === 1) {\r\n    const b= {\r\n      x: random(0, width),\r\n      y: height,\r\n      vx: random(-2, 2),\r\n      vy: random(-2, -1)\r\n    };\r\n  }\r\n  \r\n}\r\n\r\nfunction Overlap(newBalloon) {\r\n  for (let i = 0; i < balloons.length; i++) {\r\n    let b = balloons[i];\r\n    let mid = dist(newBalloon.x, newBalloon.y - 20, b.x, b.y - 20);\r\n    if (mid < 100) {\r\n      return true;\r\n    }\r\n  }\r\n  return false;\r\n}\r\n\r\nfunction mouseClicked(){\r\n  for (let i = 0; i < balloons.length; i++) {\r\n    let b = balloons[i];\r\n      if((mouseX>b.x-35&&mouseX<b.x+35)&&(mouseY>b.y-55&&mouseY<b.y+15)){\r\n        balloons.splice(i,1);\r\n         }\r\n   }\r\n}\r\n\r\nfunction windowResized() {\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/25/2024, 12:00:36 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "let balloons;\r\nlet circle;\r\n\r\nfunction setup() {\r\n  createCanvas(windowWidth, windowHeight);\r\n  balloons = [];\r\n  circle=[];\r\n}\r\n\r\nfunction draw() {\r\n  background(160, 192, 255);\r\n  \r\n  const newBalloon = CreateBalloon();\r\n  if (newBalloon) {\r\n    let attempts = 0;\r\n    while (Overlap(newBalloon) && attempts < 10) {\r\n      newBalloon.x = random(0, width);\r\n      newBalloon.y = height;\r\n      attempts++;\r\n    }\r\n    if (!Overlap(newBalloon)) {\r\n      balloons.push(newBalloon);\r\n    }\r\n  }\r\n \r\n    if(mouseIsPressed){\r\n       for (let i = 0; i < balloons.length; i++) {\r\n    let b = balloons[i];\r\n      if((mouseX>b.x-35&&mouseX<b.x+35)&&(mouseY>b.y-55&&mouseY<b.y+15)){\r\n        balloons.splice(i,1); \r\n        for(let i = 0; i < 16; i++){\r\n          let s =50;\r\n          let angle = TWO_PI * i / 16;\r\n          let x = b.x+ cos(angle) * s;\r\n          let y = b.y-20 + sin(angle) * s;\r\n          fill(\"red\");\r\n           ellipse(x, y, 5);\r\n         }\r\n       }\r\n    }\r\n    }\r\n\r\n  for (let i = 0; i < balloons.length; i++) {\r\n    let b = balloons[i];\r\n    fill('yellow');\r\n    bezier(b.x, b.y, b.x - 60, b.y - 60, b.x + 60, b.y - 60, b.x, b.y);\r\n    line(b.x, b.y, b.x, b.y + 25);\r\n    noFill();\r\n    //ellipse(b.x,b.y-20,50);\r\n\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n\r\n  \r\n      \r\n    for (let j = 0; j < balloons.length; j++) {\r\n      if (i !== j) {\r\n        let c = balloons[j];\r\n        let mid = dist(b.x, b.y - 20, c.x, c.y - 20);\r\n        if (mid < 100) {\r\n          let angle = atan2(c.y - b.y, c.x - b.x);\r\n          let overlap = 100 - mid;\r\n\r\n          b.x -= cos(angle) * overlap / 2;\r\n          b.y -= sin(angle) * overlap / 2;\r\n          c.x += cos(angle) * overlap / 2;\r\n          c.y += sin(angle) * overlap / 2;\r\n        }\r\n      }\r\n    }\r\n\r\n    if (b.x < 0 || b.x > width) {\r\n      b.vx = -b.vx;\r\n    }\r\n\r\n    b.x = constrain(b.x, 60, width - 60);\r\n    b.y = constrain(b.y, 60, height);\r\n  }\r\n}\r\n\r\n\r\nfunction CreateBalloon() {\r\n  if (frameCount % 7 === 1) {\r\n    return {\r\n      x: random(0, width),\r\n      y: height,\r\n      vx: random(-2, 2),\r\n      vy: random(-2, -1)\r\n    };\r\n  }\r\n  \r\n}\r\n\r\nfunction Overlap(newBalloon) {\r\n  for (let i = 0; i < balloons.length; i++) {\r\n    let b = balloons[i];\r\n    let mid = dist(newBalloon.x, newBalloon.y - 20, b.x, b.y - 20);\r\n    if (mid < 100) {\r\n      return true;\r\n    }\r\n  }\r\n  return false;\r\n}\r\n\r\n\r\n\r\nfunction windowResized() {\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n"
+            }
+          ]
+        }
+      }
     }
   ]
 }
