@@ -14,5 +14,18 @@ function setup(){
   let total = 0;
   for(let i = 0; i < scores.length; i++){ total += scores[i]; }
 
+
+cx=width/2;
+cy=height/2;
+const r =min(width,height);
+
+let start=0;
+for(let i =0;i<scores.length;i++){
+  let angle=scores[i]/total*TWO_PI
+  arc(cx,cy,r,r,start,start+angle,PIE);
+ text(scores[i].toPrecision(3),cx+cos((start*2+angle)/2)*r/3,cy+sin((start*2+angle)/2)*r/3);
+ textAlign=(CENTER,CENTER);
+ start+=angle;
+}
   // BLANK[1]
 }

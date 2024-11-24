@@ -16,9 +16,22 @@ function setup(){
 
   // ここからが本番
   fill(0);
-  const dx = width / scores.length;
+  
   let px, py; // 線を引くために一つ前の点を覚えておく変数
   for(let i = 0; i < scores.length; i++){
-    // BLANK[1]
+    const dx = width / scores.length;
+   const h = height * scores[i] / 100;
+   const cx= (dx*i+dx*(i+1))/2;
+   const cy= height-h;
+
+    ellipse(cx,cy,10);
+    fill(0);
+    
+    if(i>0){
+      strokeWeight(1);
+      line(px,py,cx,cy);
+    }
+     px=cx;
+     py=cy; // BLANK[1]
   }
 }
