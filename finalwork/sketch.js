@@ -34,7 +34,7 @@ function draw() {
           let x = b.x+ cos(angle) * s;
           let y = b.y-20 + sin(angle) * s;
           fill("red");
-           ellipse(x, y, 5);
+          ellipse(x, y, 5);
          }
        }
     }
