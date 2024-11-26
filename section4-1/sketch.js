@@ -19,18 +19,26 @@ function setup(){
 
   // ここから平均・最大・最小を求めます
   let average, largest, smallest;
-  // BLANK[1]　平均値（ヒント average = 合計 / 配列の長さ）
+ 
+  average=sum/scores.length;
+  console.log(average); // BLANK[1]　平均値（ヒント average = 合計 / 配列の長さ）
 
   largest = 0;
   for(let i = 0; i < scores.length; i++){
+    if (scores[i]>largest){
+      largest=scores[i]
+    }
     // BLANK[2]　ヒント：今までの最大値 largest と scores[i] を比較する
   }
+  console.log(largest);
 
   smallest = 100;
   for(let i = 0; i < scores.length; i++){
-    // BLANK[3]　ヒント：最小値とだいたい同じ
+    if (smallest>scores[i]){
+      smallest=scores[i];// BLANK[3]　ヒント：最小値とだいたい同じ
   }
-
+}
+ console.log(smallest);
   // ここから棒グラフを描いていきます。まずは背景に横線をn本引く
   const n = 10;
   for(let i = 0; i < n; i++){ line(0, height * i / n, width, height * i / n); }
@@ -39,12 +47,20 @@ function setup(){
 
   for(let i = 0; i < scores.length; i++){
     const dx = width / scores.length;
-    const h = height * scores[i] / 100;
-    // BLANK[4] ヒント: 条件分岐を使って色を変更します
-    rect(i * dx + 2, height - h, dx - 4, h);
+    const h = height * scores[i] /100 ; // 棒の高さ（点数に比例）
+    if (scores[i]==largest){
+      fill("red");
+    }else if (scores[i]==smallest){
+      fill("blue");
+    }else{
+      fill(122);
+    }// BLANK[4] ヒント: 条件分岐を使って色を変更します
+    rect(i * dx + 2, height - h, dx - 4, h);//2は左端のグラフの隙間、４はグラフ同士の隙間
     fill(0);
     text(scores[i].toPrecision(3), i * dx, height - h);
   }
 
-  // BLANK[5] 平均点の線を引きます
+ stroke("green");
+ const ha=height*average/100;
+ line(0,height-ha,width,height-ha); // BLANK[5] 平均点の線を引きます
 }
