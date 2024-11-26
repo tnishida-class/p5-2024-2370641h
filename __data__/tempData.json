@@ -4139,6 +4139,186 @@
           ]
         }
       }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/26/2024, 11:03:21 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet LastTime;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\nballs = [];\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n  if(millis()-LastTime>100){\r\n    for(let i = 0; i < balls.length; i++){\r\n      let b = balls[i];\r\n      ellipse(b.x, b.y, b.size);\r\n      b.x += b.vx;\r\n      b.y += b.vy;\r\n  }\r\n}\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = { x: mouseX, y: mouseY, size, vx: dx, vy: dy };\r\n    balls.push(b);\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/26/2024, 11:03:43 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet LastTime;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\nballs = [];\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n  if(millis()-LastTime>100){\r\n    for(let i = 0; i < balls.length; i++){\r\n      let b = balls[i];\r\n      ellipse(b.x, b.y, b.size);\r\n      b.x += b.vx;\r\n      b.y += b.vy;\r\n  }\r\n}\r\n}\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = { x: mouseX, y: mouseY, size, vx: dx, vy: dy };\r\n    balls.push(b);\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/26/2024, 11:03:59 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet LastTime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\nballs = [];\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n  if(millis()-LastTime>100){\r\n    for(let i = 0; i < balls.length; i++){\r\n      let b = balls[i];\r\n      ellipse(b.x, b.y, b.size);\r\n      b.x += b.vx;\r\n      b.y += b.vy;\r\n  }\r\n}\r\n}\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = { x: mouseX, y: mouseY, size, vx: dx, vy: dy };\r\n    balls.push(b);\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/26/2024, 11:08:47 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet LastTime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\nballs = [];\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n  if(millis()-LastTime>100){\r\n  const b={\r\n    x:random(width),\r\n    y:random(height),\r\n    size:random(10,50),\r\n    vx:radom(-3,3),\r\n    vy:random(-3,3)\r\n  }\r\n  balls.push(b);\r\n  LastTime()=millis();\r\n  }\r\n}\r\n}\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = { x: mouseX, y: mouseY, size, vx: dx, vy: dy };\r\n    balls.push(b);\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/26/2024, 11:09:23 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet LastTime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\nballs = [];\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n  if(millis()-LastTime>100){\r\n  const b={\r\n    x:random(width),\r\n    y:random(height),\r\n    size:random(10,50),\r\n    vx:radom(-3,3),\r\n    vy:random(-3,3)\r\n  }\r\n  balls.push(b);\r\n  LastTime()=millis();\r\n  }\r\n}\r\n\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = { x: mouseX, y: mouseY, size, vx: dx, vy: dy };\r\n    balls.push(b);\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/26/2024, 11:10:39 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet LastTime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\nballs = [];\r\n}\r\n\r\nfunction draw(){\r\n  \r\n  background(160, 192, 255);\r\n  if(millis()-LastTime>100){\r\n    const b={\r\n      x:random(width),\r\n      y:random(height),\r\n      size:random(10,50),\r\n      vx:radom(-3,3),\r\n      vy:random(-3,3)\r\n    }\r\n    balls.push(b);\r\n    LastTime()=millis();\r\n    }\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n  \r\n}\r\n\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = { x: mouseX, y: mouseY, size, vx: dx, vy: dy };\r\n    balls.push(b);\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/26/2024, 11:13:15 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet LastTime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\nballs = [];\r\n}\r\n\r\nfunction draw(){\r\n  \r\n  background(160, 192, 255);\r\n  if(millis()-LastTime>100){\r\n    const b={\r\n      x:random(width),\r\n      y:random(height),\r\n      size:random(10,50),\r\n      vx:radom(-3,3),\r\n      vy:random(-3,3)\r\n    };\r\n    balls.push(b);\r\n    LastTime()=millis();\r\n    }\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n  \r\n}\r\n\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = {\r\n       x: mouseX, \r\n       y: mouseY,\r\n        size, \r\n        vx: dx, \r\n        vy: dy };\r\n    balls.push(b);\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/26/2024, 11:13:56 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet LastTime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\nballs = [];\r\n}\r\n\r\nfunction draw(){\r\n  \r\n  background(160, 192, 255);\r\n  if(millis()-LastTime>100){\r\n    const b={\r\n      x:random(width),\r\n      y:random(height),\r\n      size:random(10,50),\r\n      vx:radom(-3,3),\r\n      vy:random(-3,3)\r\n    };\r\n    balls.push(b);\r\n    LastTime()=millis();\r\n    }\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n  \r\n}\r\n\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = {\r\n       x: mouseX, \r\n       y: mouseY,\r\n       size:random(30,200),\r\n        vx: dx, \r\n       vy: dy };\r\n    balls.push(b);\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/26/2024, 11:14:46 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet LastTime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\nballs = [];\r\n}\r\n\r\nfunction draw(){\r\n  \r\n  background(160, 192, 255);\r\n  if(millis()-LastTime>100){\r\n    const b={\r\n      x:random(width),\r\n      y:random(height),\r\n      size:random(10,50),\r\n      vx:radom(-3,3),\r\n      vy:random(-3,3)\r\n    };\r\n    balls.push(b);\r\n    LastTime=millis();\r\n    }\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n  \r\n}\r\n\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = {\r\n       x: mouseX, \r\n       y: mouseY,\r\n       size:random(30,200),\r\n        vx: dx, \r\n       vy: dy };\r\n    balls.push(b);\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/26/2024, 11:16:45 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet LastTime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n   balls = [];\r\n}\r\n\r\nfunction draw(){\r\n  \r\n  background(160, 192, 255);\r\n  if(millis()-LastTime>100){\r\n    const b={\r\n      x:random(width),\r\n      y:random(height),\r\n      size:random(10,50),\r\n      vx:radom(-3,3),\r\n      vy:random(-3,3)\r\n    };\r\n    balls.push(b);\r\n    LastTime=millis();\r\n    }\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n  }\r\n\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  let size=random(30,200);\r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = {\r\n       x: mouseX, \r\n       y: mouseY,\r\n       size:random(30,200),\r\n        vx: dx, \r\n       vy: dy };\r\n    balls.push(b);\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/26/2024, 11:25:46 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet LastTime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n   balls = [];\r\n}\r\n\r\nfunction draw(){\r\n  \r\n  background(160, 192, 255);\r\n  if(millis()-LastTime>100){\r\n    const b={\r\n      x:random(width),\r\n      y:random(height),\r\n      size:random(10,50),\r\n      vx:random(-3,3),\r\n      vy:random(-3,3)\r\n    };\r\n    balls.push(b);\r\n    LastTime=millis();\r\n    }\r\n\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n  }\r\n\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  \r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = {\r\n       x: mouseX, \r\n       y: mouseY,\r\n       size:random(30,200),\r\n       vx: dx, \r\n       vy: dy };\r\n    balls.push(b);\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/26/2024, 11:26:06 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "//　テキスト「オブジェクト」\r\n// 練習問題：ボールのサイズをランダムに変更してみよう\r\n// 練習問題：何も操作しなくてもボールが湧いてくる機能を追加しよう\r\n\r\nlet balls;\r\nlet LastTime=0;\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n   balls = [];\r\n}\r\n\r\nfunction draw(){\r\n  \r\n  background(160, 192, 255);\r\n  if(millis()-LastTime>100){\r\n    const b={\r\n      x:random(width),\r\n      y:random(height),\r\n      size:random(10,50),\r\n      vx:random(-3,3),\r\n      vy:random(-3,3)\r\n    };\r\n    balls.push(b);\r\n    LastTime=millis();\r\n    }\r\n\r\n  for(let i = 0; i < balls.length; i++){\r\n    let b = balls[i];\r\n    ellipse(b.x, b.y, b.size);\r\n    b.x += b.vx;\r\n    b.y += b.vy;\r\n  }\r\n  }\r\n\r\n\r\nfunction mouseDragged(){\r\n  const dx = mouseX - pmouseX;\r\n  const dy = mouseY - pmouseY;\r\n  \r\n  if(mag(dx, dy) > 5){// mag(x,y) はベクトル(x,y)の長さ\r\n    const b = {\r\n       x: mouseX, \r\n       y: mouseY,\r\n       size:random(30,200),\r\n       vx: dx, \r\n       vy: dy };\r\n    balls.push(b);\r\n  }\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}"
+            }
+          ]
+        }
+      }
     }
   ]
 }
